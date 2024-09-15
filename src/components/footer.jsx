@@ -1,15 +1,12 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import logo from '../assets/Logo.png';
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
     return (
         <div className="flex-1 bg-[#061129] text-white">
-            {/* <img src={Ellipse23} alt="" className='absolute bottom-0 w-[500px]' />
-        <img src={Ellipse22} alt="" className='absolute right-0 bottom-0 w-[500px]' />  */}
             <div className='grid grid-cols-1 relative sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto container px-4 sm:px-6 bg-transparent lg:px-8 pt-12 pb-14'>
-                {/* Augmented Solution */}
                 <div className='flex flex-col gap-6'>
                     <img className='w-40 sm:w-48 h-auto' src={logo} alt="logo" />
                     <p className='text-sm md:text-base'>

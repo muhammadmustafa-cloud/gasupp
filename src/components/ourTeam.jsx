@@ -1,7 +1,7 @@
 import team1 from '../assets/team1.jpg'
 const OurTeam = () => {
     return (
-        <div className='my-5'>
+        <div className='my-16'>
             <div className='flex w-full mt-16 justify-center'>
                 <div className='flex left-40 relative'>
                     <span className='bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute'></span>
