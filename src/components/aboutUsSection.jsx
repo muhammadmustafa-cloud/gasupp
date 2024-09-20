@@ -9,17 +9,17 @@ const AboutUsSection = () => {
                     <span className='bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute'></span>
                     <h5 className='text-2xl absolute text-[#41CB5B] font-normal tracking-wider left-16'>ABOUT US</h5>
                 </div>
-                <h2 className='text-7xl font-medium blueColor mt-4'>Universal GasUpp Solutions for Every Vehicle</h2>
-                <p className='text-xl text-[#898a9c]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur est dicta iure cupiditate magnam tempore molestias veniam quis recusandae in quos fugiat rerum perspiciatis veritatis, porro minus quibusdam quam voluptatum.</p>
+                <h2 className='text-6xl font-medium blueColor mt-4'>Experience Reliable Car Care with GasUpp: Your Go-To Car Service Provider</h2>
+                <p className='text-xl text-[#898a9c]'>GasUpp is dedicated to providing fast and reliable gas delivery and automotive services right to your doorstep. Our mission is to make car care as effortless as possible, offering convenience and peace of mind with every service.</p>
                 <div className='flex flex-col gap-4'>
                 <div className='flex items-center gap-2'>
-                    <span><LiaCheckCircleSolid size={25} color='#41CB5B' /></span><span className='font-medium text-[#898a9c] text-base'>From Starting our launch to service with dignity.</span>
+                    <span><LiaCheckCircleSolid size={25} color='#41CB5B' /></span><span className='font-normal text-[#898a9c] text-lg'><span className='font-medium text-[#898a9c] text-lg'>Reliability:</span> Count on GasUpp for top-notch roadside assistance, car washes, oil changes, and more. We’re your one-stop auto solution.</span>
                 </div>
                 <div className='flex items-center gap-2'>
-                    <span><LiaCheckCircleSolid size={25} color='#41CB5B' /></span><span className='font-medium text-[#898a9c] text-base'>We always provide flexible & quality task.</span>
+                <span><LiaCheckCircleSolid size={25} color='#41CB5B' /></span><span className='font-normal text-[#898a9c] text-lg'><span className='font-medium text-[#898a9c] text-lg'>Convenience:</span> GasUpp brings the gas station to you, saving you time and effort in your busy schedule. Enjoy car care without leaving home.</span>
                 </div>
                 <div className='flex items-center gap-2'>
-                    <span><LiaCheckCircleSolid size={25} color='#41CB5B' /></span><span className='font-medium text-[#898a9c] text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tempore!.</span>
+                <span><LiaCheckCircleSolid size={25} color='#41CB5B' /></span><span className='font-normal text-[#898a9c] text-lg'><span className='font-medium text-[#898a9c] text-lg'>Customer Satisfaction:</span> We deliver premium fuel and services to ensure your vehicle runs smoothly. Trust GasUpp for quality care you can rely on.</span>
                 </div>
                 </div>
                 <div className='border-[#41CB5B] hover:bg-[#41CB5B] hover:text-white transition translate-x-1 border text-[#41CB5B] font-medium px-6 py-4 w-52 text-center rounded-full cursor-pointer'>

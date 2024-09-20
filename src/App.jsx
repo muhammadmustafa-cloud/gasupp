@@ -1,30 +1,23 @@
 import './App.css'
-import AboutUsSection from './components/aboutUsSection'
-import AchievementSection from './components/achievementSection'
-import ExtraFacility from './components/extraFacility'
+import AboutPage from './components/aboutPage'
 import Footer from './components/footer'
-import HomeBanner from './components/homeBanner'
+import HomePage from './components/homePage'
 import Navbar from './components/navbar'
-import OurTeam from './components/ourTeam'
-import Reviews from './components/reviews'
-import ServicesSection from './components/servicesSection'
-import Testimonials from './components/testimonials'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
 
   return (
-    <div>
-      <Navbar/>
-      <HomeBanner/>
-      <AboutUsSection/>
-      <ServicesSection/>
-      <ExtraFacility/>
-      <AchievementSection/>
-      <OurTeam/>
-      <Testimonials/>
-      <Reviews/>
-      <Footer/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/about-us' element={<AboutPage/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
+    </>
   )
 }
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 const Navbar = () => {
   return (
@@ -7,8 +8,8 @@ const Navbar = () => {
       </div>
       <div>
         <ul className='flex gap-10 font-medium'>
-            <li className='text-[#41CB5B]'>Home</li>
-            <li>About</li>
+            <Link to='/'><li className='text-[#41CB5B]'>Home</li></Link>
+            <Link to='/about-us'><li>About</li></Link>
             <li>Services</li>
             <li>Contact Us</li>
             <li>About Us</li>
