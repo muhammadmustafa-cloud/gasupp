@@ -4,6 +4,9 @@ import meter from '../assets/meter-checker.png'
 import skillBg from '../assets/skill-bg.jpg'
 import CounterSection from './counterSection'
 import { HiExternalLink } from "react-icons/hi";
+import Testimonials from './testimonials'
+import OurTeam from './ourTeam'
+import Reviews from './reviews'
 
 const AboutPage = () => {
   return (
@@ -93,6 +96,10 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+
+      <Testimonials page="about"/>
+      <OurTeam/>
+      <Reviews/>
     </>
   )
 }

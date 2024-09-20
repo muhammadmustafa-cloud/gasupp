@@ -1,12 +1,14 @@
 import img from '../assets/2.jpg'
-const Testimonials = () => {
+const Testimonials = ({page}) => {
+    const bgColor = page==='home'? "bg-[#ededed]" : page === 'about' ? "bg-[#050c1d]" : "bg-white";
+    const textColor = page==='home'? "text-[#050c1d]" : page === 'about' ? "text-white" : "text-white";
     return (
-        <div className='flex flex-col justify-center items-center pb-20 bg-[#ededed]'>
+        <div className={`flex flex-col justify-center items-center pb-20 ${bgColor}`}>
              <div className='flex relative mt-20'>
                     <span className='bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute'></span>
                     <h5 className='text-2xl absolute text-[#41CB5B] font-normal tracking-wider '>Testimonial</h5>
                 </div>
-                <h2 className='text-7xl text-center font-medium blueColor mt-12 w-[800px]'>What Our Clients Say About Us</h2>
+                <h2 className={`text-5xl text-center font-semibold blueColor ${textColor} mt-12 w-[20%]}`}>What Our Clients Say About Us</h2>
             <div className='flex mt-12 justify-around gap-10'>
                 <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg mx-auto">
                     {/* Quote Icon */}

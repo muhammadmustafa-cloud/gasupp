@@ -16,7 +16,7 @@ const HomePage = () => {
             <ExtraFacility />
             <AchievementSection />
             <OurTeam />
-            <Testimonials />
+            <Testimonials page="home" />
             <Reviews />
         </>
     )

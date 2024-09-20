@@ -52,13 +52,13 @@ const Footer = () => {
                             <div className='buttonbg rounded-full w-10 h-10 flex justify-center items-center'>
                                 <MdOutlineMail fontSize="1.2em" className='text-white' />
                             </div>
-                            <p>augmentedsol@gmail.com</p>
+                            <p>info@gasupp.com</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <div className='buttonbg rounded-full w-10 h-10 flex justify-center items-center'>
                                 <FaPhoneAlt fontSize="1.2em" className='text-white' />
                             </div>
-                            <p>+92 308 4846218</p>
+                            <p>765-413-9667</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <div className='buttonbg rounded-full w-10 h-10 flex justify-center items-center'>
