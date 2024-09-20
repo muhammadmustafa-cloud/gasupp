@@ -66,23 +66,23 @@ const AboutPage = () => {
             <h1 className='text-5xl leading-1 font-bold blueColor mt-8'>Great Experience of Vehicle Services</h1>
             <p className='text-lg text-[#898a9c] my-6'>The Most Popular courier & delivery service provider. We are served domestic and over world wide.</p>
             <div className='mt-8'>
-              <div className='flex flex-col justify-center items-center '>
-                <div className="flex items-start gap-4">
-                  <HiExternalLink size={40} className="text-green-500 bg-black rounded-full w-14" />
+              <div className='flex flex-col justify-center gap-5  items-center '>
+                <div className="flex justify-center items-start gap-4">
+                  <HiExternalLink size={50} color='#41CB5B' className=' my-auto h-full' />
                   <div>
                     <h4 className="font-bold text-lg">Free Estimate</h4>
                     <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dicta et doloribus, omnis!</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <HiExternalLink className="text-green-500 text-3xl" />
+                <div className="flex justify-center items-start gap-4">
+                  <HiExternalLink size={50} color='#41CB5B' className=' my-auto h-full' />
                   <div>
                     <h4 className="font-bold text-lg">24/7 Services</h4>
                     <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dicta et doloribus, omnis!</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <HiExternalLink className="text-green-500 text-3xl" />
+                <div className="flex justify-center items-start gap-4">
+                  <HiExternalLink size={50} color='#41CB5B' className=' my-auto h-full' />
                   <div>
                     <h4 className="font-bold text-lg">Flat Rate Fees</h4>
                     <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dicta et doloribus, omnis!</p>
