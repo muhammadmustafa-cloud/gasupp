@@ -7,6 +7,7 @@ import service6 from '../assets/services2.jpg'
 import confirmation from '../assets/confirmation.png'
 import delivery from '../assets/delivery.png'
 import booking from '../assets/booking.png'
+import ExtraFacility from './extraFacility'
 const ServicePage = () => {
     return (
         <>
@@ -130,6 +131,10 @@ const ServicePage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            {/* Additional Services */}
+            <div>
+                <ExtraFacility/>
             </div>
         </>
 
