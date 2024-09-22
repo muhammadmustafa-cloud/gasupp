@@ -9,7 +9,7 @@ import staion from '../assets/electric-station.png'
 const HomePage = () => {
     return (
         <>
-        {/* Header */}
+            {/* Header */}
             <div className='h-screen w-full' style={{
                 backgroundImage: `url(images/slide-1.jpg)`,
                 backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
