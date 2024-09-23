@@ -27,73 +27,74 @@ const ServicePage = () => {
             {/* Services Section */}
             <div className='bg-[#ECF0F9]  '>
                 <div className='flex items-center justify-center gap-6 py-14 flex-wrap'>
-                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[500px]">
+                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[550px] flex flex-col">
                         <div className="flex justify-center">
                             <img src={service1} alt="Electric Charging" className="w-[400px] h-auto rounded-md " />
                         </div>
-                        <div className="mt-10 text-center">
+                        <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Electric Charging</h2>
-                            <p className="text-gray-600 mt-2">This services involve transferring the parcels to the closest depot to the delivery location.</p>
+                            <p className="text-gray-600 mt-2">We offer a convenient pick-up and charging service for electric vehicles. Simply schedule a pick-up, and we'll charge your vehicle and return it fully powered.</p>
                         </div>
                         <div className="mt-8">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[500px]">
+                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[550px] flex flex-col">
                         <div className="flex justify-center">
                             <img src={service2} alt="Electric Charging" className="w-[400px] h-auto rounded-md " />
                         </div>
-                        <div className="mt-10 text-center">
+                        <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Gas Delivery</h2>
-                            <p className="text-gray-600 mt-2">This services involve transferring the parcels to the closest depot to the delivery location.</p>
+                            <p className="text-gray-600 mt-2"> Never worry about running out of fuel again. Our quick and reliable gas delivery service brings the fuel you need directly to your location.</p>
                         </div>
                         <div className="mt-8">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[500px]">
+                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[550px] flex flex-col">
                         <div className="flex justify-center">
                             <img src={service3} alt="Electric Charging" className="w-[400px] h-auto rounded-md " />
                         </div>
-                        <div className="mt-10 text-center">
+                        <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Roadside Assistance</h2>
-                            <p className="text-gray-600 mt-2">This services involve transferring the parcels to the closest depot to the delivery location.</p>
+                            <p className="text-gray-600 mt-2"> From tire changes to lockout services, we’re here to help you get back on the road swiftly.</p>
                         </div>
                         <div className="mt-8">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[500px]">
+                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[550px] flex flex-col">
                         <div className="flex justify-center">
                             <img src={service4} alt="Electric Charging" className="w-[400px] h-auto rounded-md " />
                         </div>
-                        <div className="mt-10 text-center">
+                        <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Mobile Car Wash</h2>
-                            <p className="text-gray-600 mt-2">This services involve transferring the parcels to the closest depot to the delivery location.</p>
+                            <p className="text-gray-600 mt-2"> Enjoy a sparkling clean car without leaving your home. Our mobile car wash service provides thorough and convenient cleaning.</p>
                         </div>
                         <div className="mt-8">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[500px]">
+                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[550px] flex flex-col">
                         <div className="flex justify-center">
-                            <img src={service5} alt="Electric Charging" className="w-[400px] h-auto rounded-md " />
+                            <img src={service5} alt="Electric Charging" className="w-[400px] h-auto rounded-md" />
                         </div>
-                        <div className="mt-10 text-center">
+                        <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Oil Changes</h2>
-                            <p className="text-gray-600 mt-2">This services involve transferring the parcels to the closest depot to the delivery location.</p>
+                            <p className="text-gray-600 mt-2">Keep your vehicle running smoothly with our on-site oil change services.</p>
                         </div>
-                        <div className="mt-8">
+                        <div className="mt-8 flex">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[500px]">
+
+                    <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] h-[550px] flex flex-col">
                         <div className="flex justify-center">
                             <img src={service6} alt="Electric Charging" className="w-[400px] h-auto rounded-md " />
                         </div>
-                        <div className="mt-10 text-center">
+                        <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Battery Replacement/Boosting</h2>
-                            <p className="text-gray-600 mt-2">This services involve transferring the parcels to the closest depot to the delivery location.</p>
+                            <p className="text-gray-600 mt-2"> Get your car battery replaced or boosted quickly, right at your location.</p>
                         </div>
                         <div className="mt-8">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>
@@ -134,7 +135,7 @@ const ServicePage = () => {
             </div>
             {/* Additional Services */}
             <div>
-                <ExtraFacility/>
+                <ExtraFacility />
             </div>
         </>
 

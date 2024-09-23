@@ -7,6 +7,7 @@ import { HiExternalLink } from "react-icons/hi";
 import Testimonials from './testimonials'
 import OurTeam from './ourTeam'
 import Reviews from './reviews'
+import CardComponent from './cardComponent'
 
 const AboutPage = () => {
   return (
@@ -52,6 +53,7 @@ const AboutPage = () => {
         </div>
       </div>
 
+      <CardComponent/>
       {/* COunter Section */}
       <CounterSection />
 

@@ -39,7 +39,7 @@ const Navbar = () => {
           >
             <li>Why Choose Us</li>
           </NavLink>
-          <NavLink 
+          {/* <NavLink 
             to='/privacy-policy' 
             className={({ isActive }) => isActive ? 'text-[#41CB5B]' : ''}
           >
@@ -56,7 +56,7 @@ const Navbar = () => {
             className={({ isActive }) => isActive ? 'text-[#41CB5B]' : ''}
           >
             <li>Accessibility</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
       </div>
       <div className='greenColor text-white font-medium px-6 py-4 rounded-full cursor-pointer'>

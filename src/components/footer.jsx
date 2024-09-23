@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import logo from '../assets/logo.png';
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-6'>
                     <img className='w-40 sm:w-48 h-auto' src={logo} alt="logo" />
                     <p className='text-sm md:text-base'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        GasUpp is dedicated to providing fast and reliable gas delivery and automotive services right to your doorstep.
                     </p>
                     <div className='flex gap-4'>
                         <div className='buttonbg rounded-full w-10 h-10 flex justify-center items-center'>
@@ -27,21 +28,36 @@ const Footer = () => {
                 <div className='text-sm md:flex md:flex-col md:justify-center md:items-center md:text-base'>
                     <h2 className='text-xl mb-4'>Company</h2>
                     <ul className="flex flex-col gap-4">
-                        <li>
-                            About Us
-                        </li>
-                        <li>
-                            Services
-                        </li>
-                        <li>
-                            Products
-                        </li>
-                        <li>
-                            Contact Us
-                        </li>
-                        <li>
-                            Privacy Policy
-                        </li>
+                        <NavLink to='/'>
+                            <li>Home</li>
+                        </NavLink>
+                        <NavLink to='/about-us'>
+                            <li>About</li>
+                        </NavLink>
+                        <NavLink to='/service'>
+                            <li>Services</li>
+                        </NavLink>
+                        <NavLink to='/contact-us'>
+                            <li>Contact Us</li>
+                        </NavLink>
+                        <NavLink to='/why-choose-us'>
+                            <li>Why Choose Us</li>
+                        </NavLink>
+                        <NavLink
+                            to='/privacy-policy'
+                        >
+                            <li>Privacy Policy</li>
+                        </NavLink>
+                        <NavLink
+                            to='/term-service'
+                        >
+                            <li>Terms of Service</li>
+                        </NavLink>
+                        <NavLink
+                            to='/accessibility'
+                        >
+                            <li>Accessibility</li>
+                        </NavLink>
                     </ul>
                 </div>
                 {/* Contact Us */}
