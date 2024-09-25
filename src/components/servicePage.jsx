@@ -33,7 +33,7 @@ const ServicePage = () => {
                         </div>
                         <div className="mt-10 text-center flex-grow">
                             <h2 className="text-xl font-semibold">Electric Charging</h2>
-                            <p className="text-gray-600 mt-2">We offer a convenient pick-up and charging service for electric vehicles. Simply schedule a pick-up, and we'll charge your vehicle and return it fully powered.</p>
+                            <p className="text-gray-600 mt-2">We offer a convenient pick-up and charging service for electric vehicles. Simply schedule a pick-up, and we&apos;ll charge your vehicle and return it fully powered.</p>
                         </div>
                         <div className="mt-8">
                             <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">Read More</button>

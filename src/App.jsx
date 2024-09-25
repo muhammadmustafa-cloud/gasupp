@@ -10,11 +10,14 @@ import WhyChooseUs from './components/whyChooseUs'
 import PrivacyPolicy from './components/privacyPolicy'
 import TermServices from './components/termServices'
 import Accessibility from './components/accessibility'
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 function App() {
 
   return (
     <>
       <BrowserRouter>
+        <div></div>
         <Navbar />
         <Routes>
           <Route path='/' element={<HomePage/>} />

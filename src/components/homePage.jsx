@@ -18,11 +18,11 @@ const HomePage = () => {
                     <div className=' flex flex-col gap-9 w-[45%] ml-28 justify-center my-auto h-screen text-white'>
                         <div className='flex relative'>
                             <span className='bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute'></span>
-                            <h5 className='text-2xl absolute font-normal tracking-wider left-16'>Welcome to GasUpp</h5>
+                            <h5 className='md:text-2xl text-xl md:w-full w-72 absolute font-normal  tracking-wider left-16'>Welcome to GasUpp</h5>
                         </div>
-                        <h2 className='text-7xl font-bold tracking-wide mt-4'>Instant Gas, Maximum Comfort!</h2>
-                        <p className='text-xl'>Your one-stop solution for gas delivery and automotive services, available 24/7.</p>
-                        <div className='greenColor text-white font-medium px-6 py-4 w-52 text-center rounded-full cursor-pointer'>
+                        <h2 className='md:text-7xl text-4xl font-bold tracking-wide mt-4'>Instant Gas, Maximum Comfort!</h2>
+                        <p className='md:text-xl text-base'>Your one-stop solution for gas delivery and automotive services, available 24/7.</p>
+                        <div className='greenColor text-white font-medium md:px-6 px-4 py-2 w-40 md:py-4 md:w-52 text-center rounded-full cursor-pointer'>
                             <button>Get Started</button>
                         </div>
                     </div>
