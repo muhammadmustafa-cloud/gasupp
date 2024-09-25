@@ -21,7 +21,7 @@ const ContactUsPage = () => {
                         <span className='bg-[#41CB5B] h-[3px] rounded-xl -left-16 w-[50px] top-3 absolute'></span>
                         <h5 className="text-xl font-medium mb-5">Contact Us</h5>
                     </div>
-                    <h2 className="text-5xl font-bold w-[60%] items-center text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem..</h2>
+                    <h2 className="md:text-5xl text-3xl font-bold md:w-[60%] w-full items-center text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem..</h2>
                 </div>
             </div>
             {/* Contact Info */}
@@ -54,7 +54,7 @@ const ContactUsPage = () => {
                 backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed',
             }}> */}
                 <div className="bg-[#050C1D] mt-11 w-full h-full flex flex-col items-center justify-center">
-                    <h1 className="text-5xl text-center font-semibold blueColor text-white mt-12 w-[20%]">Get In Touch</h1>
+                    <h1 className="md:text-5xl text-3xl text-center font-semibold blueColor text-white mt-12 w-full md:w-[20%]">Get In Touch</h1>
                     <div className="w-[60%]">
 
                         <ContactForm />
@@ -68,7 +68,7 @@ const ContactUsPage = () => {
                 backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed',
             }}>
                 <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
-                    <section className="w-[50%] mx-auto py-20 px-4">
+                    <section className="md:w-[50%] w-full mx-auto py-20 px-4">
                         <h2 className={`text-5xl text-center font-semibold blueColor text-white mt-8 mb-8 w-[20%]}`}>FAQ&apos;s</h2>
                         <section className="grid grid-cols-1 gap-8">
                             {cards.map((card, index) => (

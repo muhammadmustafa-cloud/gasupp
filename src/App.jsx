@@ -1,17 +1,15 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import AboutPage from './components/aboutPage'
+import Accessibility from './components/accessibility'
+import ContactUsPage from './components/contactUsPage'
 import Footer from './components/footer'
 import HomePage from './components/homePage'
 import Navbar from './components/navbar'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import ServicePage from './components/servicePage'
-import ContactUsPage from './components/contactUsPage'
-import WhyChooseUs from './components/whyChooseUs'
 import PrivacyPolicy from './components/privacyPolicy'
+import ServicePage from './components/servicePage'
 import TermServices from './components/termServices'
-import Accessibility from './components/accessibility'
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import WhyChooseUs from './components/whyChooseUs'
 function App() {
 
   return (
