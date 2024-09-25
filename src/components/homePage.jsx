@@ -46,7 +46,7 @@ const HomePage = () => {
         <div className="w-full lg:w-1/2 flex flex-col gap-7">
           <div className="flex relative">
             <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute"></span>
-            <h5 className="text-xl lg:text-2xl absolute text-[#41CB5B] font-normal tracking-wider left-12 lg:left-16">
+            <h5 className="text-xl lg:text-2xl absolute text-[#41CB5B] font-normal tracking-wider left-14 lg:left-16">
               ABOUT US
             </h5>
           </div>
