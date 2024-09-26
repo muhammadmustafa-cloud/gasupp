@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import emailjs from "@emailjs/browser";
 function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,17 +11,35 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({
-      name,
-      email,
-      number,
-      subject,
-      message,
-      contactMethod,
-      attachments,
-    });
-  };
+    
+    const serviceId = "service_xx5njob";
+    const templateId = "template_buqzqxb";
+    const publicKey = "jy3MOzC-PMHViMmuX";
+ 
 
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    from_number: number,
+    from_subject: subject,
+    from_message: message,
+    from_contactMethod: contactMethod,
+    from_attachments: attachments,
+  }
+
+  emailjs.send(serviceId, templateId, templateParams, publicKey).then((response)=>{
+    console.log("Email sent successfully", response);
+    setName('');
+    setEmail('');
+    setNumber('');
+    setSubject('');
+    setMessage('');
+    setContactMethod('');
+    setAttachments('');
+  }).catch((error)=> {
+    console.error("Error sending email", error)
+  })
+};
   return (
     <form
       onSubmit={handleSubmit}

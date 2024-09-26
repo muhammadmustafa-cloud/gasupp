@@ -28,7 +28,7 @@ const HomePage = () => {
               </h5>
             </div>
             <h2 className="md:text-7xl text-4xl mx-4 md:mx-0 font-bold tracking-wide mt-4">
-              Instant Gas, Maximum Comfort!
+              Instant Gas,<br/> Maximum Comfort!
             </h2>
             <p className="md:text-xl mx-4 md:mx-0 text-base">
               Your one-stop solution for gas delivery and automotive services,
