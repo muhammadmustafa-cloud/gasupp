@@ -1,6 +1,7 @@
 import star from "../assets/Star.svg";
 import send from "../assets/Send.svg";
 import shield from "../assets/Shield.svg";
+import { FaStar } from "react-icons/fa";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div

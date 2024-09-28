@@ -1,12 +1,20 @@
 import AchievementSection from "./achievementSection";
-import ExtraFacility from "./extraFacility";
-import OurTeam from "./ourTeam";
 import Reviews from "./reviews";
 import Testimonials from "./testimonials";
 import aboutSection from "../assets/about.jpg";
 import { LiaCheckCircleSolid } from "react-icons/lia";
 import staion from "../assets/electric-station.png";
+import { useNavigate } from "react-router-dom";
 const HomePage = () => {
+  const navigate = useNavigate();
+  const handleAbout = () => {
+    navigate('/about-us');
+    window.scrollTo(0, 0)
+  }
+  const handleService = () => {
+    navigate('/service');
+    window.scrollTo(0, 0)
+  }
   return (
     <>
       {/* Header */}
@@ -28,7 +36,7 @@ const HomePage = () => {
               </h5>
             </div>
             <h2 className="md:text-7xl text-4xl mx-4 md:mx-0 font-bold tracking-wide mt-4">
-              Instant Gas,<br/> Maximum Comfort!
+              Instant Gas,<br /> Maximum Comfort!
             </h2>
             <p className="md:text-xl mx-4 md:mx-0 text-base">
               Your one-stop solution for gas delivery and automotive services,
@@ -99,7 +107,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="border-[#41CB5B] hover:bg-[#41CB5B] hover:text-white transition translate-x-1 border text-[#41CB5B] font-medium px-6 py-4 w-40 lg:w-52 text-center rounded-full cursor-pointer">
-            <button>Learn More</button>
+            <button onClick={handleAbout}>Learn More</button>
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
@@ -154,19 +162,19 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                    CNG Conversion
+                    Gas Delivery
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    This services involve transferring the parcels to the
-                    closest depot to the delivery location.
+                    Never worry about running out of fuel again. Our quick and reliable gas
+                    delivery service brings the fuel you need directly to your location.
                   </p>
                 </div>
-                <button className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleService} className="px-6  md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#061129] w-full md:w-[400px] mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white">
+              <div className="bg-[#061129] w-[full] md:h-[450px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
                     src={staion}
@@ -176,19 +184,20 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                    Electric Charging
+                    Electric Vehicle Charging
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    This services involve transferring the parcels to the
-                    closest depot to the delivery location.
+                    We offer a convenient pick-up and charging service for
+                    electric vehicles. Simply schedule a pick-up, and we&apos;ll charge your vehicle and return it
+                    fully powered.
                   </p>
                 </div>
-                <button className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#41CB5B] w-full md:w-[400px] mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white">
+              <div className="bg-[#41CB5B] w-[full] md:h-[450px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
                     src={staion}
@@ -198,19 +207,19 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                    Car Washing
+                    Wiper Blade Replacement
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    This services involve transferring the parcels to the
-                    closest depot to the delivery location.
+                    Need new wiper blades? We’ll come to your location and
+                    replace them on the spot, ensuring optimal visibility during tough weather conditions.
                   </p>
                 </div>
-                <button className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#061129] w-full md:w-[400px] mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white">
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
                     src={staion}
@@ -220,19 +229,19 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                    Pure Octane
+                    Roadside Assistance
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    This services involve transferring the parcels to the
-                    closest depot to the delivery location.
+                    From tire changes to lockout services, we’re here to help you get
+                    back on the road swiftly.
                   </p>
                 </div>
-                <button className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#41CB5B] w-full md:w-[400px] mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white">
+              <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-4 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
                     src={staion}
@@ -242,19 +251,19 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                    Light Diesel
+                    Mobile Car Wash
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    This services involve transferring the parcels to the
-                    closest depot to the delivery location.
+                    Enjoy a sparkling clean car without leaving your home. Our mobile
+                    car wash service provides thorough and convenient cleaning.
                   </p>
                 </div>
-                <button className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#061129] w-full md:w-[400px] mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white">
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
                     src={staion}
@@ -264,14 +273,35 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                    Crystal Petrol
+                    Oil Changes
+                  </h4>
+                  <div className="text-base md:text-lg mt-2">
+                    Keep your vehicle running smoothly with our on-site oil change services.
+                  </div>
+                  <button onClick={handleService} className="px-0 md:px-0 font-medium mt-4 text-lg md:text-xl">
+                    Read More
+                  </button>
+                </div>
+
+              </div>
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
+                <div className="px-6 md:px-10 mb-4">
+                  <img
+                    src={staion}
+                    className="w-[60px] md:w-[80px]"
+                    alt="icon"
+                  />
+                </div>
+                <div className="px-6 md:px-10 my-5 md:my-7">
+                  <h4 className="text-2xl md:text-3xl font-semibold">
+                    Battery Replacement/Boosting
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    This services involve transferring the parcels to the
-                    closest depot to the delivery location.
+                    Get your car battery replaced or boosted quickly, right
+                    at your location.
                   </p>
                 </div>
-                <button className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -279,10 +309,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      <ExtraFacility />
+      {/* <ExtraFacility /> */}
       <AchievementSection />
-      <OurTeam />
+      {/* <OurTeam /> */}
       <Testimonials page="home" />
       <Reviews />
     </>

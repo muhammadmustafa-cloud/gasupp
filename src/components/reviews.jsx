@@ -32,7 +32,7 @@ const Reviews = () => {
                 <img
                   src={card}
                   alt={`Client ${index + 1}`}
-                  className="max-w-full h-auto rounded-md" // Responsive image styling
+                  className="w-[200px] h-auto rounded-md" // Responsive image styling
                 />
               </div>
             ))}

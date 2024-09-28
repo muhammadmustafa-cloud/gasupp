@@ -83,3 +83,16 @@ body{
     background-color: #41CB5B;
     transform: translateX(-50%) rotate(45deg);
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
