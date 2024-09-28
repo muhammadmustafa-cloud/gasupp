@@ -72,7 +72,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="justify-between px-10 flex w-[80%] pb-7">
+            <div className="justify-between md:px-10 flex md:w-[80%] pb-5 md:pb-7">
                 <h5 className="text-[#898a9c]">© 2024 Uber Technologies Inc.</h5>
                 <div className="flex">
                     <ul className="flex gap-8 text-[#898a9c]">
