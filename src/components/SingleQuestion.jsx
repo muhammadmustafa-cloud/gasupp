@@ -7,7 +7,8 @@ export default function SingleQuestion({ question, answer }) {
 
   return (
     <>
-      <div className="border border-gray-400 text-[#41CB5B] rounded-lg  bg-transparent">
+      <div className="border border-gray-400 text-[#41CB5B] rounded-lg bg-transparent">
+        {/* Question and Toggle Button */}
         <article className="flex items-center justify-between p-4 lg:p-6">
           <h2
             className="cursor-pointer"
@@ -19,7 +20,7 @@ export default function SingleQuestion({ question, answer }) {
             {!showAnswer && (
               <li>
                 <button onClick={() => setShowAnswer(true)}>
-                  <BsPlusLg color="#41CB5B"/>
+                  <BsPlusLg color="#41CB5B" />
                 </button>
               </li>
             )}
@@ -33,8 +34,13 @@ export default function SingleQuestion({ question, answer }) {
           </ul>
         </article>
 
+        {/* Answer Section */}
         <article
-          className={`${showAnswer && "border-t border-white p-4 lg:p-6"}`}
+          className={`${
+            showAnswer
+              ? "border-t border-white text-white p-4 lg:p-6 transition-all duration-300 ease-in-out ml-5"
+              : "transition-all duration-300 ease-in-out ml-0"
+          }`}
         >
           {showAnswer && <p>{answer}</p>}
         </article>

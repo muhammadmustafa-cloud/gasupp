@@ -11,15 +11,47 @@ const HomePage = () => {
     navigate('/about-us');
     window.scrollTo(0, 0)
   }
-  const handleService = () => {
-    navigate('/service');
-    window.scrollTo(0, 0)
-  }
+
+  const handleServiceOne = () => {
+    navigate('/service#one');
+  };
+
+  const handleServiceTwo = () => {
+    navigate('/service#two');
+  };
+
+  const handleServiceThree = () => {
+    navigate('/service#three');
+  };
+
+  const handleServiceFour = () => {
+    navigate('/service#four');
+  };
+
+  const handleServiceFive = () => {
+    navigate('/service#five');
+  };
+
+  const handleServiceSix = () => {
+    navigate('/service#six');
+  };
+
+  const handleServiceSeven = () => {
+    navigate('/service#seven');
+  };
+
+  const handleServiceEight = () => {
+    navigate('/service#eight');
+  };
+
+  const handleServiceNine = () => {
+    navigate('/service#nine');
+  };
   return (
     <>
       {/* Header */}
       <div
-        className="h-screen max-w-full overflow-hidden"
+        className="h-[500px] max-w-full overflow-hidden"
         style={{
           backgroundImage: `url(images/slide-1.jpg)`,
           backgroundSize: "cover",
@@ -50,7 +82,7 @@ const HomePage = () => {
       </div>
 
       {/* About Us */}
-      <div className="flex flex-col lg:flex-row gap-14 lg:my-10 mx-6 lg:mx-24">
+      <div className="flex flex-col lg:flex-row gap-14 lg:my-10 mx-6 mt-4 md:mt-4 lg:mx-24">
         <div className="w-full lg:w-1/2 flex flex-col gap-7">
           <div className="flex relative">
             <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute"></span>
@@ -169,7 +201,7 @@ const HomePage = () => {
                     delivery service brings the fuel you need directly to your location.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6  md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceOne} className="px-6  md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -192,7 +224,7 @@ const HomePage = () => {
                     fully powered.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceTwo} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -214,7 +246,7 @@ const HomePage = () => {
                     replace them on the spot, ensuring optimal visibility during tough weather conditions.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceThree} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -236,7 +268,7 @@ const HomePage = () => {
                   Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceFour} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -257,7 +289,7 @@ const HomePage = () => {
                   We’ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceFive} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -279,7 +311,7 @@ const HomePage = () => {
                     back on the road swiftly.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceSix} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -301,7 +333,7 @@ const HomePage = () => {
                     car wash service provides thorough and convenient cleaning.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceSeven} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
@@ -321,7 +353,7 @@ const HomePage = () => {
                   <div className="text-base md:text-lg mt-2">
                     Keep your vehicle running smoothly with our on-site oil change services.
                   </div>
-                  <button onClick={handleService} className="px-0 md:px-0 font-medium mt-4 text-lg md:text-xl">
+                  <button onClick={handleServiceEight} className="px-0 md:px-0 font-medium mt-4 text-lg md:text-xl">
                     Read More
                   </button>
                 </div>
@@ -344,7 +376,7 @@ const HomePage = () => {
                     at your location.
                   </p>
                 </div>
-                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button onClick={handleServiceNine} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>

@@ -8,7 +8,20 @@ import confirmation from '../assets/confirmation.png'
 import delivery from '../assets/delivery.png'
 import booking from '../assets/booking.png'
 import Reviews from './reviews'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 const ServicePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        // Ensure smooth scroll starts from the top
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [location]);
   return (
     <>
       {/* Header */}
@@ -36,7 +49,7 @@ const ServicePage = () => {
       {/* Services Section */}
       <div className="bg-[#ECF0F9]   ">
         <div className="flex items-center mx-auto container justify-center gap-6 py-14 flex-wrap">
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='one' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service1}
@@ -53,7 +66,7 @@ const ServicePage = () => {
             </div>
           </div>
           
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id="two" className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service2}
@@ -72,7 +85,7 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='three' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service3}
@@ -90,7 +103,7 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='four' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service6}
@@ -108,7 +121,7 @@ const ServicePage = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='five' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service6}
@@ -127,7 +140,7 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='six' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service4}
@@ -145,7 +158,7 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='seven' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service5}
@@ -162,7 +175,7 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='eight' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service6}
@@ -181,7 +194,7 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+          <div id='nine' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service6}

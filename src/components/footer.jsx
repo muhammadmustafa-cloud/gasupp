@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <div className="flex-1 bg-[#061129] text-white">
             <div className='grid grid-cols-1 relative sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto container px-4 sm:px-6 bg-transparent lg:px-8 pt-12 pb-8'>
-                <div className='flex flex-col gap-2 items-start'>
-                    <NavLink to='/'><img className='w-40 sm:w-48 h-auto' src={logo} alt="logo" /></NavLink>
-                   <div className="ml-12">
+                <div className='flex -ml-10 md:ml-0 flex-col gap-2 items-start'>
+                    <NavLink onClick={() => window.scrollTo(0, 0)} to='/'><img className='w-40 sm:w-48 h-auto' src={logo} alt="logo" /></NavLink>
+                   <div className="ml-10 md:ml-12">
                    <p className='text-sm -mt-4 md:text-base'>
                         GasUpp is dedicated to providing fast and reliable gas delivery and automotive services right to your doorstep.
                     </p>
@@ -69,13 +69,13 @@ const Footer = () => {
                             <div className='buttonbg rounded-full w-10 h-10 flex justify-center items-center'>
                                 <FaLocationArrow fontSize="1.2em" className='text-white' />
                             </div>
-                            <p>1 GasUpp Road, Orlando, <br /> FL, 32808</p>
+                            <p>1 GasUpp Road<br /> Orlando, FL, 32808</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="justify-between md:px-10 flex md:w-[90%] pb-5 md:pb-7">
-                <h5 className="text-[#898a9c] ml-10">© 2024 GasUpp</h5>
+                <h5 className="text-[#898a9c] ml-2 md:ml-10">© 2024 GasUpp</h5>
                 <div className="flex">
                     <ul className="flex gap-8 mr-10 text-[#898a9c]">
                         <NavLink onClick={() => window.scrollTo(0, 0)}

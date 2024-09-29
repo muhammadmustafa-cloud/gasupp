@@ -9,6 +9,7 @@ import SingleQuestion from "./SingleQuestion";
 
 const ContactUsPage = () => {
     const [cards] = useState(questions);
+    
     return (
         <>
             {/* Header */}
@@ -77,20 +78,24 @@ const ContactUsPage = () => {
 
             {/* FAQS Section */}
             <div className='w-full' style={{
-                backgroundImage: `url(images/service4.jpg)`,
-                backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed',
-            }}>
-                <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
-                    <section className="md:w-[50%] w-full mx-auto py-8 px-4">
-                        <h2 className={`text-5xl text-center font-semibold blueColor text-white mt-8 mb-8 w-[20%]}`}>FAQ&apos;s</h2>
-                        <section className="grid grid-cols-1 gap-8">
-                            {cards.map((card, index) => (
-                                <SingleQuestion {...card} key={index} />
-                            ))}
-                        </section>
-                    </section>
-                </div>
-            </div>
+    backgroundImage: `url(images/service4.jpg)`,
+    backgroundSize: 'cover', 
+    backgroundPosition: 'center', 
+    backgroundRepeat: 'no-repeat', 
+    backgroundAttachment: 'fixed',
+}}>
+    <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
+        <section className="md:w-[50%] w-full mx-auto py-8 px-4">
+            <h2 className={`text-5xl text-center font-semibold blueColor text-white mt-8 mb-8 w-[20%]}`}>FAQ&apos;s</h2>
+            <section className="grid grid-cols-1 gap-8">
+                {cards.map((card, index) => (
+                    <SingleQuestion {...card} key={index} />
+                ))}
+            </section>
+        </section>
+    </div>
+</div>
+
 
             <Reviews />
 

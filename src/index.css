@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
@@ -96,3 +98,12 @@ body{
   .animate-fade-in {
     animation: fadeIn 0.5s ease-in-out;
   }
+
+  .answer {
+    transition: margin-left 0.3s ease-in-out; /* Smooth transition */
+    margin-left: 0; /* Default position */
+}
+
+.answer.open {
+    margin-left: 20px; /* Shift the answer 20px to the right when open */
+}

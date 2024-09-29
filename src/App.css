@@ -1,7 +1,19 @@
-.greenColor{
+/* .greenColor{
   background-color: #41CB5B;
 }
 
 .blueColor{
   color: #1d2143;
 }
+
+.top-btn{
+  position: absolute;
+  right: 15px;
+  margin-top: -5rem;
+  z-index: 999;
+  padding: 1rem;
+  border: none;
+  border-radius: 100%;
+  background-color: aqua;
+  cursor: pointer;
+} */

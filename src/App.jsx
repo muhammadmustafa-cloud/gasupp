@@ -10,10 +10,12 @@ import PrivacyPolicy from './components/privacyPolicy'
 import ServicePage from './components/servicePage'
 import TermServices from './components/termServices'
 import WhyChooseUs from './components/whyChooseUs'
+import GoToTop from './components/goToTop'
 function App() {
 
   return (
     <>
+      
       <BrowserRouter>
         <div></div>
         <Navbar />
@@ -28,6 +30,7 @@ function App() {
           <Route path='/accessibility' element={<Accessibility/>}/>
         </Routes>
         <Footer />
+        <GoToTop/>
       </BrowserRouter>
 
     </>

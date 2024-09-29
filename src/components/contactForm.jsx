@@ -11,10 +11,28 @@ function ContactForm() {
   const [contactMethod, setContactMethod] = useState("Email");
   const [attachments, setAttachments] = useState(null);
   const [modalOpen, setModalOpen] = useState(false); // State for modal
+  const [errors, setErrors] = useState({});
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple regex for email validation
+    return emailRegex.test(email);
+  };
 
+   
   const handleSubmit = (e) => {
     e.preventDefault();
+    const validationErrors = {};
+    if (!name) validationErrors.name = "Full name is required.";
+    if (!email || !validateEmail(email))
+      validationErrors.email = "Valid email is required.";
+    if (!number) validationErrors.number = "Phone number is required.";
+    if (!subject) validationErrors.subject = "Subject is required.";
+    if (!message) validationErrors.message = "Message is required.";
 
+    // If there are errors, set the error state and prevent form submission
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
     const serviceId = "service_xohw6ue";
     const templateId = "gasupp_t36qu28";
     const publicKey = "V7OUXBKphSqFSfSAN";
@@ -74,9 +92,12 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email Address"
-            className="bg-transparent border-2 rounded-md focus:outline-none p-2"
+            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${
+              errors.email ? "border-red-500" : ""
+            }`}
             required
           />
+          {errors.email && <p className="text-red-500">{errors.email}</p>}
           <input
             type="text"
             name="phoneNumber"
