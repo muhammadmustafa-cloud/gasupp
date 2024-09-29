@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
 
       {/* Sidebar for Small Screens */}
-      <div className={`fixed top-0 left-0 w-[75%] h-full bg-[#41CB5B] text-gray-600 z-50 transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
+      <div className={`fixed top-0 left-0 w-[50%] h-full bg-[#41CB5B] text-gray-600 z-50 transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
         <ul className='flex flex-col items-center gap-10 font-semibold mt-20'>
           <NavLink to='/' className={({ isActive }) => isActive ? 'text-white' : ''} onClick={closeNavbar}>
             <li>Home</li>
