@@ -7,7 +7,7 @@ const CounterSection = () => {
 
   return (
     <div
-      className="h-[300px] w-full"
+      className="h-[150px] w-full"
       style={{
         backgroundImage: `url(images/bread-bg.jpg)`,
         backgroundSize: "cover",

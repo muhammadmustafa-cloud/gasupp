@@ -13,7 +13,7 @@ const ServicePage = () => {
     <>
       {/* Header */}
       <div
-        className="h-[500px] w-full overflow-hidden"
+        className="h-[250px] w-full overflow-hidden"
         style={{
           backgroundImage: `url(images/bread-bg.jpg)`,
           backgroundSize: "cover",
@@ -36,7 +36,7 @@ const ServicePage = () => {
       {/* Services Section */}
       <div className="bg-[#ECF0F9]   ">
         <div className="flex items-center mx-auto container justify-center gap-6 py-14 flex-wrap">
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service1}
@@ -51,13 +51,9 @@ const ServicePage = () => {
                 delivery service brings the fuel you need directly to your location.
               </p>
             </div>
-            <div className="mt-8">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
-            </div>
           </div>
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+          
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service2}
@@ -74,13 +70,9 @@ const ServicePage = () => {
                 fully powered.
               </p>
             </div>
-            <div className="mt-8">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
-            </div>
           </div>
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service3}
@@ -96,13 +88,46 @@ const ServicePage = () => {
                 replace them on the spot, ensuring optimal visibility during tough weather conditions.
               </p>
             </div>
-            <div className="mt-8">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+            <div className="flex justify-center">
+              <img
+                src={service6}
+                alt="Electric Charging"
+                className="w-[400px] h-auto rounded-md "
+              />
+            </div>
+            <div className="mt-10 text-center flex-grow">
+              <h2 className="text-xl font-semibold">
+              Tire Rotation
+              </h2>
+              <p className="text-gray-600 mt-2">
+                {" "}
+                Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
+              </p>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
+            <div className="flex justify-center">
+              <img
+                src={service6}
+                alt="Electric Charging"
+                className="w-[400px] h-auto rounded-md "
+              />
+            </div>
+            <div className="mt-10 text-center flex-grow">
+              <h2 className="text-xl font-semibold">
+              Fluid Top-Up Services
+              </h2>
+              <p className="text-gray-600 mt-2">
+                {" "}
+                We&apos;ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service4}
@@ -118,13 +143,9 @@ const ServicePage = () => {
                 back on the road swiftly.
               </p>
             </div>
-            <div className="mt-8">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
-            </div>
           </div>
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service5}
@@ -139,14 +160,9 @@ const ServicePage = () => {
                 car wash service provides thorough and convenient cleaning.
               </p>
             </div>
-            <div className="mt-8 flex">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
-            </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service6}
@@ -163,14 +179,9 @@ const ServicePage = () => {
                 Keep your vehicle running smoothly with our on-site oil change services.
               </p>
             </div>
-            <div className="mt-8">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
-            </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[550px] flex flex-col">
+          <div className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
             <div className="flex justify-center">
               <img
                 src={service6}
@@ -188,12 +199,8 @@ const ServicePage = () => {
                 at your location.
               </p>
             </div>
-            <div className="mt-8">
-              <button className="bg-green-500 text-white rounded-full px-4 py-2 w-full hover:bg-green-600">
-                Read More
-              </button>
-            </div>
           </div>
+          
         </div>
       </div>
       {/* Why Choose Us */}

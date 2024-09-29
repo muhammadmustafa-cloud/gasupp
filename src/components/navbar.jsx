@@ -40,9 +40,9 @@ const Navbar = () => {
           <NavLink to='/contact-us' className={({ isActive }) => isActive ? 'text-[#41CB5B]' : ''}>
             <li>Contact Us</li>
           </NavLink>
-          <NavLink to='/why-choose-us' className={({ isActive }) => isActive ? 'text-[#41CB5B]' : ''}>
+          {/* <NavLink to='/why-choose-us' className={({ isActive }) => isActive ? 'text-[#41CB5B]' : ''}>
             <li>Why Choose Us</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
       </div>
 
@@ -72,9 +72,9 @@ const Navbar = () => {
           <NavLink to='/contact-us' className={({ isActive }) => isActive ? 'text-white' : ''} onClick={closeNavbar}>
             <li>Contact Us</li>
           </NavLink>
-          <NavLink to='/why-choose-us' className={({ isActive }) => isActive ? 'text-white' : ''} onClick={closeNavbar}>
+          {/* <NavLink to='/why-choose-us' className={({ isActive }) => isActive ? 'text-white' : ''} onClick={closeNavbar}>
             <li>Why Choose Us</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
       </div>
     </div>

@@ -13,7 +13,7 @@ const AboutPage = () => {
   return (
     <>
       <div
-        className="h-[500px] w-full overflow-hidden"
+        className="h-[250px] w-full overflow-hidden"
         style={{
           backgroundImage: `url(images/bread-bg.jpg)`,
           backgroundSize: "cover",
@@ -35,8 +35,8 @@ const AboutPage = () => {
       {/* <CardComponent /> */}
 
       {/* About Us Section */}
-      <div className="w-full bg-[#ECF0F9] overflow-hidden flex justify-center items-center">
-        <div className="my-12 md:my-24 bg-white flex flex-col md:flex-row w-[90%] md:w-[85%] rounded-lg shadow-lg">
+      {/* <div className="w-full bg-[#ECF0F9] overflow-hidden flex justify-center items-center">
+        <div className="my-12 md:my-10 bg-white flex flex-col md:flex-row w-[90%] md:w-[85%] rounded-lg shadow-lg">
           <div className="w-full flex justify-center items-center p-3">
             <img className="rounded-lg" src={about2} alt="About Us" />
           </div>
@@ -73,22 +73,22 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <CounterSection />
+      
 
       {/* Best Features */}
       <div className="w-full bg-[#ECF0F9] justify-center items-center flex">
-        <div className="my-24 bg-white flex-col md:flex-row-reverse flex w-[90%] md:w-[85%]">
+        <div className="my-10 bg-white flex-col md:flex-row-reverse flex w-[90%] md:w-[85%]">
           <div className="w-full flex justify-center items-center p-3">
             <img className="rounded-lg" src={skillBg} alt="Skill Background" />
           </div>
-          <div className="py-14 px-6 md:px-24">
+          <div className="py-8 px-6 md:px-24">
             <div className="flex relative">
               <span className="bg-[#41CB5B] h-[2px] w-[45px] top-3 absolute"></span>
               <h5 className="text-lg text-[#41CB5B] absolute font-normal tracking-wider uppercase left-16">
-                Best Feature
+                About Us
               </h5>
             </div>
             <h1 className="text-4xl md:text-5xl leading-1 font-bold blueColor mt-8">
@@ -143,7 +143,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
+      <CounterSection />
       <Testimonials page="about" />
       {/* <OurTeam /> */}
       <Reviews />

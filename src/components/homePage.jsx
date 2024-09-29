@@ -28,7 +28,7 @@ const HomePage = () => {
         }}
       >
         <div className="h-full flex flex-col text-white bg-[#021017] opacity-80">
-          <div className="flex flex-col gap-9 w-full md:w-[45%] ml-0 md:ml-28 justify-center my-auto h-screen text-white">
+          <div className="flex flex-col gap-9 w-full md:w-[50%] ml-0 md:ml-28 justify-center my-auto h-screen text-white">
             <div className="flex relative">
               <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute"></span>
               <h5 className="md:text-2xl text-xl md:w-full w-72  absolute font-normal tracking-wider left-16">
@@ -50,7 +50,7 @@ const HomePage = () => {
       </div>
 
       {/* About Us */}
-      <div className="flex flex-col lg:flex-row gap-14 my-10 lg:my-28 mx-6 lg:mx-24">
+      <div className="flex flex-col lg:flex-row gap-14 lg:my-10 mx-6 lg:mx-24">
         <div className="w-full lg:w-1/2 flex flex-col gap-7">
           <div className="flex relative">
             <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 absolute"></span>
@@ -139,7 +139,7 @@ const HomePage = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="flex flex-col py-12 md:py-24 justify-center items-center">
+        <div className="flex flex-col py-12 md:py-10 justify-center items-center">
           <div className="flex relative md:mr-0 mr-20">
             <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
             <h5 className="text-xl md:text-2xl absolute text-[#41CB5B] font-normal tracking-wider">
@@ -219,6 +219,49 @@ const HomePage = () => {
                 </button>
               </div>
 
+              
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
+                <div className="px-6 md:px-10 mb-4">
+                  <img
+                    src={staion}
+                    className="w-[60px] md:w-[80px]"
+                    alt="icon"
+                  />
+                </div>
+                <div className="px-6 md:px-10 my-5 md:my-7">
+                  <h4 className="text-2xl md:text-3xl font-semibold">
+                  Tire Rotation
+                  </h4>
+                  <p className="text-base md:text-lg mt-2">
+                  Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
+                  </p>
+                </div>
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                  Read More
+                </button>
+              </div>
+             
+              <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
+                <div className="px-6 md:px-10 mb-4">
+                  <img
+                    src={staion}
+                    className="w-[60px] md:w-[80px]"
+                    alt="icon"
+                  />
+                </div>
+                <div className="px-6 md:px-10 my-5 md:my-7">
+                  <h4 className="text-2xl md:text-3xl font-semibold">
+                  Fluid Top-Up Services
+                  </h4>
+                  <p className="text-base md:text-lg mt-2">
+                  We’ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
+                  </p>
+                </div>
+                <button onClick={handleService} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                  Read More
+                </button>
+              </div>
+
               <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
@@ -284,7 +327,7 @@ const HomePage = () => {
                 </div>
 
               </div>
-              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
+              <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
                     src={staion}

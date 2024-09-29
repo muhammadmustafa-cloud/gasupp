@@ -16,10 +16,10 @@ const Testimonials = ({ page }) => {
 
   return (
     <div
-      className={`flex flex-col justify-center items-center pb-20 ${bgColor}`}
+      className={`flex flex-col justify-center items-center pb-5 ${bgColor}`}
     >
       {/* Section Heading */}
-      <div className="flex relative mt-20 ">
+      <div className="flex relative mt-10 ">
         <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
         <h5 className="text-2xl absolute text-[#41CB5B] font-normal tracking-wider ">
           Testimonial
@@ -27,7 +27,7 @@ const Testimonials = ({ page }) => {
       </div>
 
       <h2
-        className={`text-3xl md:text-5xl text-center font-semibold blueColor ${textColor} mt-12 w-full md:w-[50%] lg:w-[40%]`}
+        className={`text-3xl md:text-5xl text-center font-semibold blueColor ${textColor} mt-12 w-full md:w-[50%] lg:w-[60%]`}
       >
         What Our Clients Say About Us
       </h2>

@@ -12,7 +12,7 @@ const ContactUsPage = () => {
     return (
         <>
             {/* Header */}
-            <div className='h-[500px] w-full' style={{
+            <div className='h-[250px] w-full' style={{
                 backgroundImage: `url(images/bread-bg.jpg)`,
                 backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
             }}>
@@ -25,8 +25,8 @@ const ContactUsPage = () => {
                 </div>
             </div>
             {/* Contact Info */}
-            <div className="bg-white w-full h-full flex flex-col items-center justify-center my-10 ">
-                <div className='flex flex-wrap items-center justify-center gap-5  my-14'>
+            <div className="bg-white w-full h-full flex flex-col items-center justify-center ">
+                <div className='flex flex-wrap items-center justify-center gap-5  mt-8'>
                     <div className='flex flex-col h-[320px] bg-white shadow-2xl w-[350px] rounded-2xl justify-center items-center px-2 py-8'>
                         <FaLocationDot color="#41CB5B" size="50" />
                         <h5 className='text-2xl mt-3 font-semibold'>Location</h5>
@@ -81,7 +81,7 @@ const ContactUsPage = () => {
                 backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed',
             }}>
                 <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
-                    <section className="md:w-[50%] w-full mx-auto py-20 px-4">
+                    <section className="md:w-[50%] w-full mx-auto py-8 px-4">
                         <h2 className={`text-5xl text-center font-semibold blueColor text-white mt-8 mb-8 w-[20%]}`}>FAQ&apos;s</h2>
                         <section className="grid grid-cols-1 gap-8">
                             {cards.map((card, index) => (

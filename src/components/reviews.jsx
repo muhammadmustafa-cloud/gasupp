@@ -21,7 +21,7 @@ const cardImage = [
 const Reviews = () => {
   return (
     <div className="bg-[#f6f6f6]">
-      <div className=" mx-auto container rounded-3xl py-20">
+      <div className=" mx-auto container rounded-3xl">
         <div className="flex justify-center items-center md:gap-5 gap-0">
           <Marquee speed={60} direction={"left"} pauseOnHover={true}>
             {cardImage.map((card, index) => (
@@ -32,7 +32,7 @@ const Reviews = () => {
                 <img
                   src={card}
                   alt={`Client ${index + 1}`}
-                  className="w-[200px] h-auto rounded-md" // Responsive image styling
+                  className="w-[150px] h-auto rounded-md" // Responsive image styling
                 />
               </div>
             ))}

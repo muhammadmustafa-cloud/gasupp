@@ -115,11 +115,20 @@ function ContactForm() {
             <option className="text-black" value="Oil Change">
               Oil Change
             </option>
+            <option className="text-black" value="Wiper Blade Replacement">
+            Wiper Blade Replacement
+            </option>
+            <option className="text-black" value="Tire Rotation">
+            Tire Rotation
+            </option>
+            <option className="text-black" value="Fluid Top-Up">
+            Fluid Top-Up
+            </option>
             <option className="text-black" value="Battery Replacement/Boosting">
-              Battery Replacement/Boosting
+            Battery Replacement/Boosting
             </option>
             <option className="text-black" value="Subscription Inquiry">
-              Subscription Inquiry
+            Subscription Inquiry
             </option>
             <option className="text-black" value="Other">
               Other
@@ -183,8 +192,9 @@ function ContactForm() {
         <div>
           <NavLink onClick={() => window.scrollTo(0, 0)} to="/privacy-policy">
             <p className="text-center underline italic">
-              By accessing or using GasUpp, you agree to this Privacy Policy.
+            
             </p>
+            <p className=""><span className="text-center underline italic">Privacy Notice: </span>Your privacy is important to us. We will only use the information provided to respond to your inquiry and will not share it with third parties.</p>
           </NavLink>
         </div>
 
