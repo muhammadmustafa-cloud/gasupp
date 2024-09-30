@@ -95,7 +95,7 @@ const Navbar = () => {
             onClick={closeNavbar}
           >
             <li className="border-b py-4 flex justify-between">
-              About <FaPlus />
+              About
             </li>
           </NavLink>
           <NavLink
@@ -106,7 +106,7 @@ const Navbar = () => {
             onClick={closeNavbar}
           >
             <li className="border-b py-4 flex justify-between">
-              Services <FaPlus />
+              Services
             </li>
           </NavLink>
        
@@ -118,7 +118,7 @@ const Navbar = () => {
             onClick={closeNavbar}
           >
             <li className="border-b py-4 flex justify-between">
-              Contact <FaPlus />
+              Contact 
             </li>
           </NavLink>
         </ul>
@@ -126,7 +126,7 @@ const Navbar = () => {
         {/* Donate Button */}
         <div className="px-6 my-4">
           <NavLink to="/donate" onClick={closeNavbar}>
-            <button className="bg-[#41CB5B] text-white w-full py-3 rounded-full">
+            <button className="bg-[#41CB5B] text-white w-[40%] py-3 rounded-full">
               Download Now
             </button>
           </NavLink>

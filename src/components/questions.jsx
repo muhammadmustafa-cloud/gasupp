@@ -12,7 +12,7 @@ export const questions = [
   {
     question: "What types of payments do you accept?",
     answer:
-      "We accept various payment methods including credit/debit cards and digital wallets",
+      "We accept various payment methods including credit/debit cards and digital wallets.",
   },
   
 ];
