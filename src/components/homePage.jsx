@@ -55,7 +55,7 @@ const HomePage = () => {
         style={{
           backgroundImage: `url(images/slide-1.jpg)`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          // backgroundPosition: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -74,7 +74,7 @@ const HomePage = () => {
               Your one-stop solution for gas delivery and automotive services,
               available 24/7.
             </p>
-            <div className="greenColor text-white mx-4 md:mx-0 font-medium md:px-6 px-4 py-2 w-40 md:py-4 md:w-52 text-center rounded-full cursor-pointer">
+            <div className="bg-[#41CB5B] z-50 text-white mx-4 md:mx-0 font-medium md:px-6 px-4 py-2 w-40 md:py-4 md:w-52 text-center rounded-full cursor-pointer">
               <button>Get Started</button>
             </div>
           </div>
@@ -251,7 +251,7 @@ const HomePage = () => {
                 </button>
               </div>
 
-              
+
               <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
@@ -262,17 +262,17 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                  Tire Rotation
+                    Tire Rotation
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                  Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
+                    Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
                   </p>
                 </div>
                 <button onClick={handleServiceFour} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
                   Read More
                 </button>
               </div>
-             
+
               <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
@@ -283,10 +283,10 @@ const HomePage = () => {
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
-                  Fluid Top-Up Services
+                    Fluid Top-Up Services
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                  We’ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
+                    We’ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
                   </p>
                 </div>
                 <button onClick={handleServiceFive} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">

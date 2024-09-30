@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex bg-white md:justify-around justify-between md:px-0 px-3 items-center'>
+    <div className='flex bg-white sticky top-0 z-40 md:justify-around justify-between md:px-0 px-3 items-center'>
       <div className=''>
         <NavLink to='/'>
           <img className='w-40 md:ml-0 -ml-7' src={logo} alt='logo' />
@@ -46,7 +46,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className='hidden md:block greenColor text-white font-medium px-6 py-4 rounded-full cursor-pointer'>
+      <div className='hidden md:block bg-[#41CB5B] text-white font-medium px-6 py-4 rounded-full cursor-pointer'>
         <button>Download App</button>
       </div>
 

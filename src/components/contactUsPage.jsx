@@ -9,7 +9,10 @@ import SingleQuestion from "./SingleQuestion";
 
 const ContactUsPage = () => {
     const [cards] = useState(questions);
-    
+    const [activeIndex, setActiveIndex] = useState(null); 
+    const handleQuestionClick = (index) => {
+      setActiveIndex(index === activeIndex ? null : index); // Toggle between active FAQs
+    };
     return (
         <>
             {/* Header */}
@@ -67,8 +70,8 @@ const ContactUsPage = () => {
             }}> */}
             <div className="bg-[#050C1D] mt-11 w-full h-full flex flex-col items-center justify-center">
                 <h1 className="md:text-5xl text-3xl text-center font-semibold blueColor text-white mt-12 w-full md:w-[20%]">Get In Touch</h1>
-                <p className="text-xl text-white mt-4 w-[40%] text-center font-medium mb-5">We’d love to hear from you! Fill out the form below, and we&apos;ll get back to you as soon as 
-                possible. </p>
+                <p className="text-xl text-white mt-4 w-[40%] text-center font-medium mb-5">We’d love to hear from you! Fill out the form below, and we&apos;ll get back to you as soon as
+                    possible. </p>
                 <div className="w-[60%]">
                     <ContactForm />
 
@@ -77,24 +80,35 @@ const ContactUsPage = () => {
             {/* </div> */}
 
             {/* FAQS Section */}
-            <div className='w-full' style={{
-    backgroundImage: `url(images/service4.jpg)`,
-    backgroundSize: 'cover', 
-    backgroundPosition: 'center', 
-    backgroundRepeat: 'no-repeat', 
-    backgroundAttachment: 'fixed',
-}}>
-    <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
-        <section className="md:w-[50%] w-full mx-auto py-8 px-4">
-            <h2 className={`text-5xl text-center font-semibold blueColor text-white mt-8 mb-8 w-[20%]}`}>FAQ&apos;s</h2>
+            <div
+        className="w-full"
+        style={{
+          backgroundImage: `url(images/service4.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
+          <section className="md:w-[50%] w-full mx-auto py-8 px-4">
+            <h2 className="text-5xl text-center font-semibold blueColor text-white mt-8 mb-8">
+              FAQ&apos;s
+            </h2>
             <section className="grid grid-cols-1 gap-8">
-                {cards.map((card, index) => (
-                    <SingleQuestion {...card} key={index} />
-                ))}
+              {cards.map((card, index) => (
+                <SingleQuestion
+                  key={index}
+                  question={card.question}
+                  answer={card.answer}
+                  isActive={index === activeIndex} // Active status
+                  onClick={() => handleQuestionClick(index)} // Handle click
+                />
+              ))}
             </section>
-        </section>
-    </div>
-</div>
+          </section>
+        </div>
+      </div>
 
 
             <Reviews />
