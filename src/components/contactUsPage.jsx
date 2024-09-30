@@ -6,13 +6,15 @@ import Reviews from "./reviews";
 import { useState } from "react";
 import { questions } from "./questions";
 import SingleQuestion from "./SingleQuestion";
+import { useNavigate } from "react-router-dom";
 
 const ContactUsPage = () => {
     const [cards] = useState(questions);
-    const [activeIndex, setActiveIndex] = useState(null); 
+    const [activeIndex, setActiveIndex] = useState(null);
     const handleQuestionClick = (index) => {
-      setActiveIndex(index === activeIndex ? null : index); // Toggle between active FAQs
+        setActiveIndex(index === activeIndex ? null : index); // Toggle between active FAQs
     };
+    const navigate = useNavigate()
     return (
         <>
             {/* Header */}
@@ -81,34 +83,42 @@ const ContactUsPage = () => {
 
             {/* FAQS Section */}
             <div
-        className="w-full"
-        style={{
-          backgroundImage: `url(images/service4.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
-          <section className="md:w-[50%] w-full mx-auto py-8 px-4">
-            <h2 className="text-5xl text-center font-semibold blueColor text-white mt-8 mb-8">
-              FAQ&apos;s
-            </h2>
-            <section className="grid grid-cols-1 gap-8">
-              {cards.map((card, index) => (
-                <SingleQuestion
-                  key={index}
-                  question={card.question}
-                  answer={card.answer}
-                  isActive={index === activeIndex} // Active status
-                  onClick={() => handleQuestionClick(index)} // Handle click
-                />
-              ))}
-            </section>
-          </section>
-        </div>
-      </div>
+                className="w-full"
+                style={{
+                    backgroundImage: `url(images/service4.jpg)`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundAttachment: "fixed",
+                }}
+            >
+                <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
+                    <section className="md:w-[50%] w-full mx-auto py-8 px-4">
+                        <h2 className="text-5xl text-center font-semibold blueColor text-white mt-8 mb-8">
+                            FAQ&apos;s
+                        </h2>
+                        <section className="grid grid-cols-1 gap-8">
+                            {cards.map((card, index) => (
+                                <SingleQuestion
+                                    key={index}
+                                    question={card.question}
+                                    answer={card.answer}
+                                    isActive={index === activeIndex} // Active status
+                                    onClick={() => handleQuestionClick(index)} // Handle click
+                                />
+                            ))}
+                        </section>
+                    </section>
+                <div className="flex items-center justify-center">
+                    <button onClick={()=>navigate("/faq")}
+                        type="submit"
+                        className="bg-[#41CB5B] hover:bg-white hover:text-[#41CB5B] mb-4 text-white font-medium py-3 px-10 rounded-lg"
+                    >
+                        More
+                    </button>
+                </div>
+                </div>
+            </div>
 
 
             <Reviews />

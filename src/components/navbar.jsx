@@ -127,7 +127,7 @@ const Navbar = () => {
         <div className="px-6 my-4">
           <NavLink to="/donate" onClick={closeNavbar}>
             <button className="bg-[#41CB5B] text-white w-full py-3 rounded-full">
-              Donate
+              Download Now
             </button>
           </NavLink>
         </div>

@@ -11,6 +11,7 @@ import ServicePage from './components/servicePage'
 import TermServices from './components/termServices'
 import WhyChooseUs from './components/whyChooseUs'
 import GoToTop from './components/goToTop'
+import FAQPage from './components/FAQPage'
 function App() {
 
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
           <Route path='/term-service' element={<TermServices/>}/>
           <Route path='/accessibility' element={<Accessibility/>}/>
+          <Route path='/FAQ' element={<FAQPage/>}/>
         </Routes>
         <Footer />
         <GoToTop/>
