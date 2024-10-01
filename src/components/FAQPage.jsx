@@ -41,7 +41,7 @@ const FAQPage = () => {
                         ))}
                     </section>
                 </section>
-                <section className="md:w-[50%] w-full mx-auto py-8 px-4">
+                {/* <section className="md:w-[50%] w-full mx-auto py-8 px-4">
                     <h2 className="text-3xl text-center font-semibold blueColor text-white mt-8 mb-8">
                     FAQs for GasUppers (Drivers)
                     </h2>
@@ -56,7 +56,7 @@ const FAQPage = () => {
                             />
                         ))}
                     </section>
-                </section>
+                </section> */}
             </div>
         </>
     )

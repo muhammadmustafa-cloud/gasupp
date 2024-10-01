@@ -143,7 +143,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <CounterSection />
+      {/* <CounterSection /> */}
       <Testimonials page="about" />
       {/* <OurTeam /> */}
       <Reviews />

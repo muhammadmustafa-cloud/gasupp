@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="flex-1 bg-[#061129] text-white">
+        <div className="flex-1 container mx-auto bg-[#061129] text-white">
             <div className='grid grid-cols-1 relative sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto container px-4 sm:px-6 bg-transparent lg:px-8 pt-12 pb-8'>
                 <div className='flex -ml-10 md:ml-0 flex-col gap-2 items-start'>
                     <NavLink onClick={() => window.scrollTo(0, 0)} to='/'><img className='w-40 sm:w-48 h-auto' src={logo} alt="logo" /></NavLink>
