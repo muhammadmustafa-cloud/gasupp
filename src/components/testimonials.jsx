@@ -1,7 +1,7 @@
 import { useState } from "react";
 import img from "../assets/2.jpg"; // Sample image
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const testimonials = [
   {
@@ -68,7 +68,6 @@ const testimonials = [
     image: img,
   },
 ];
-
 const Testimonials = ({ page }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -98,7 +97,9 @@ const Testimonials = ({ page }) => {
   };
 
   return (
-    <div className={`flex flex-col justify-center items-center pb-5 ${bgColor}`}>
+    <div
+      className={`flex flex-col justify-center items-center pb-5 ${bgColor}`}
+    >
       {/* Section Heading */}
       <div className="flex relative mt-10">
         <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
@@ -115,15 +116,15 @@ const Testimonials = ({ page }) => {
 
       {/* Carousel */}
       <div className="relative flex justify-center items-center mt-12 w-full px-4">
-        <button
-          onClick={handlePrev}
-          className="absolute left-0 bg-green-500 text-white px-2 py-2 rounded-full hover:bg-green-600"
-        >
-          <IoIosArrowBack size={35}/>
-        </button>
-
         {/* Testimonial Card */}
-        <div className="bg-white rounded-lg shadow-lg p-8 w-full sm:w-[90%] md:w-[45%] lg:w-[30%] mx-auto transition-all duration-300 ease-in-out">
+        <motion.div
+          className="bg-white rounded-lg shadow-lg p-8 w-full sm:w-[90%] md:w-[45%] lg:w-[30%] mx-auto"
+          key={currentIndex} // Ensure the component re-renders for animation on index change
+          initial={{ opacity: 0, y: 20 }} // Initial state
+          animate={{ opacity: 1, y: 0 }} // Animate to this state
+          exit={{ opacity: 0, y: -20 }} // Exit animation
+          transition={{ duration: 0.5 }} // Animation duration
+        >
           <div className="relative -top-6 bg-green-500 w-12 h-12 flex items-center justify-center rounded-full">
             <svg
               className="w-6 h-6 text-white"
@@ -158,14 +159,7 @@ const Testimonials = ({ page }) => {
               <p className="text-gray-500">{testimonials[currentIndex].role}</p>
             </div>
           </div>
-        </div>
-
-        <button
-          onClick={handleNext}
-          className="absolute right-0 bg-green-500 text-white px-2 py-2 rounded-full hover:bg-green-600"
-        >
-          <IoIosArrowForward size={35} />
-        </button>
+        </motion.div>
       </div>
 
       {/* Indicators */}
@@ -179,6 +173,16 @@ const Testimonials = ({ page }) => {
             }`}
           ></div>
         ))}
+      </div>
+
+      {/* Pagination Buttons */}
+      <div className="flex justify-between w-full mt-4">
+        <button onClick={handlePrev} className="text-2xl text-gray-600">
+          <IoIosArrowBack />
+        </button>
+        <button onClick={handleNext} className="text-2xl text-gray-600">
+          <IoIosArrowForward />
+        </button>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { FaPlus } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false); // State to track scroll
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -15,8 +15,24 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  // Effect to handle scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0); // Set scrolled to true if page is scrolled down
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex bg-white sticky top-0 z-40 md:justify-around justify-between md:px-0 px-3 items-center">
+    <div
+      className={`flex bg-white bg-opacity-90 md:bg-opacity-70 md:mx-0 mx-4   sticky top-0 z-40 md:justify-around justify-between md:px-0 px-2 items-center transition-all duration-300 ${
+        scrolled ? "md:rounded-lg rounded-full shadow-lg mt-8 md:mt-0" : "rounded-none"
+      }`}
+    >
       <div className="">
         <NavLink to="/">
           <img className="w-40 md:ml-0 -ml-7" src={logo} alt="logo" />
@@ -66,18 +82,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full max-w-full h-auto bg-white z-50 transition-transform transform ${
+        className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full bg-white rounded-lg p-6 z-50 transition-transform ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         } md:hidden`}
       >
         {/* Close Button */}
-        <div className="flex justify-end p-4">
+        <div className="flex justify-end">
           <button onClick={closeNavbar}>
             <IoClose size={30} />
           </button>
         </div>
 
-        <ul className="flex flex-col gap-4 px-6">
+        <ul className="flex flex-col gap-4">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -94,9 +110,7 @@ const Navbar = () => {
             }
             onClick={closeNavbar}
           >
-            <li className="border-b py-4 flex justify-between">
-              About
-            </li>
+            <li className="border-b py-4 flex justify-between">About</li>
           </NavLink>
           <NavLink
             to="/service"
@@ -105,11 +119,8 @@ const Navbar = () => {
             }
             onClick={closeNavbar}
           >
-            <li className="border-b py-4 flex justify-between">
-              Services
-            </li>
+            <li className="border-b py-4 flex justify-between">Services</li>
           </NavLink>
-       
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>
@@ -117,16 +128,14 @@ const Navbar = () => {
             }
             onClick={closeNavbar}
           >
-            <li className="border-b py-4 flex justify-between">
-              Contact 
-            </li>
+            <li className="border-b py-4 flex justify-between">Contact</li>
           </NavLink>
         </ul>
 
-        {/* Donate Button */}
-        <div className="px-6 my-4">
-          <NavLink to="/donate" onClick={closeNavbar}>
-            <button className="bg-[#41CB5B] text-white w-[40%] py-3 rounded-full">
+        {/* Download Button */}
+        <div className="my-4">
+          <NavLink onClick={closeNavbar}>
+            <button className="bg-[#41CB5B] text-white w-full py-3 rounded-full">
               Download Now
             </button>
           </NavLink>

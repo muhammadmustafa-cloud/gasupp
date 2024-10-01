@@ -17,3 +17,43 @@
   background-color: aqua;
   cursor: pointer;
 } */
+
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.loader-slider-container {
+  width: 150px;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.loader-slider {
+  height: 100%;
+  background-color: #41CB5B;
+  transition: width 0.2s ease;
+}
+
+.loader-percentage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #41CB5B;
+}
