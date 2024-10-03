@@ -75,7 +75,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div> */}
-
       {/* Best Features */}
       <div className="w-full bg-[#ECF0F9] justify-center items-center flex">
         <div className="my-10 bg-white flex-col md:flex-row-reverse flex w-[90%] md:w-[85%]">
