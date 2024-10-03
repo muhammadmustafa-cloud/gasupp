@@ -145,7 +145,7 @@ return (
         {services.map((service, index) => (
           <div
             key={index}
-            className={`bg-[${service.bgColor}] w-full md:w-[400px] h-[450px] relative mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white`}
+            className={`bg-[${service.bgColor}] w-full md:w-[400px] md:h-[450px] h-[300px] relative mx-4 md:mx-0 py-10 md:py-14 rounded-xl text-white`}
           >
             <div className="px-6 md:px-10 mb-4">
               <img
