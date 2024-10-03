@@ -54,7 +54,7 @@ const ServicePage = () => {
       {/* Services Section */}
       <div className="bg-[#ECF0F9]   ">
         <h2
-          className={`text-5xl text-center font-semibold blueColor text-black pt-12 w-[20%]}`}
+          className={`md:text-5xl text-2xl text-center  font-semibold blueColor text-black pt-12 w-full md:w-[20%]`}
         >
           Complete Car Care – <br />Our Comprehensive Service Offerings
           Include:
