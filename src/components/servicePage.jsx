@@ -28,9 +28,9 @@ const ServicePage = () => {
       <div
         className="h-[250px] w-full overflow-hidden"
         style={{
-          backgroundImage: `url(images/bread-bg.jpg)`,
+          backgroundImage: `url(images/joy5.avif)`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
         }}
       >
