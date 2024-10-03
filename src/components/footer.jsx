@@ -77,7 +77,7 @@ const Footer = () => {
                     <FaPhoneAlt fontSize="1.2em" className="text-white" />
                   </div>
                   <p>
-                    <a href="tel:7654139667">765-413-9667</a>
+                    <a href="tel:4072595949">407-259-5949</a>
                   </p>
                 </div>
                 <div className="flex items-center gap-3">

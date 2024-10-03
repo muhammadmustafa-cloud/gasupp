@@ -1,6 +1,6 @@
 import { useState } from "react";
-import img from "../assets/2.jpg"; // Sample image
-import { motion } from "framer-motion"; // Import motion from Framer Motion
+import img from "../assets/2.jpg";
+import { motion } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const testimonials = [
@@ -68,8 +68,11 @@ const testimonials = [
     image: img,
   },
 ];
+
 const Testimonials = ({ page }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const testimonialsToShow = 3;
+  const totalPages = Math.ceil(testimonials.length / testimonialsToShow);
 
   const bgColor =
     page === "home"
@@ -85,14 +88,18 @@ const Testimonials = ({ page }) => {
       : "text-white";
 
   const handlePrev = () => {
-    setCurrentIndex(
-      currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? testimonials.length - testimonialsToShow
+        : prevIndex - testimonialsToShow
     );
   };
 
   const handleNext = () => {
-    setCurrentIndex(
-      currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1
+    setCurrentIndex((prevIndex) =>
+      prevIndex + testimonialsToShow >= testimonials.length
+        ? 0
+        : prevIndex + testimonialsToShow
     );
   };
 
@@ -100,7 +107,6 @@ const Testimonials = ({ page }) => {
     <div
       className={`flex flex-col justify-center items-center pb-5 ${bgColor}`}
     >
-      {/* Section Heading */}
       <div className="flex relative mt-10">
         <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
         <h5 className="text-2xl absolute text-[#41CB5B] font-normal tracking-wider">
@@ -114,62 +120,66 @@ const Testimonials = ({ page }) => {
         What Our Clients Say About Us
       </h2>
 
-      {/* Carousel */}
       <div className="relative flex justify-center items-center mt-12 w-full px-4">
-        {/* Testimonial Card */}
-        <motion.div
-          className="bg-white rounded-lg shadow-lg p-8 w-full sm:w-[90%] md:w-[45%] lg:w-[30%] mx-auto"
-          key={currentIndex} // Ensure the component re-renders for animation on index change
-          initial={{ opacity: 0, y: 20 }} // Initial state
-          animate={{ opacity: 1, y: 0 }} // Animate to this state
-          exit={{ opacity: 0, y: -20 }} // Exit animation
-          transition={{ duration: 0.5 }} // Animation duration
-        >
-          <div className="relative -top-6 bg-green-500 w-12 h-12 flex items-center justify-center rounded-full">
-            <svg
-              className="w-6 h-6 text-white"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"
-              ></path>
-            </svg>
-          </div>
+        <div className="flex space-x-4 items-center mx-auto container">
+          {testimonials
+            .slice(currentIndex, currentIndex + testimonialsToShow)
+            .map((testimonial) => (
+              <motion.div
+                className="bg-white rounded-lg shadow-lg p-8 w-full sm:w-[90%] md:w-[45%] lg:w-[30%]"
+                key={testimonial.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="relative -top-6 bg-green-500 w-12 h-12 flex items-center justify-center rounded-full">
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"
+                    ></path>
+                  </svg>
+                </div>
 
-          <p className="text-gray-600 text-lg">
-            {testimonials[currentIndex].text}
-          </p>
+                <p className="text-gray-600 text-lg">{testimonial.text}</p>
 
-          <div className="mt-6 flex items-center">
-            <img
-              src={testimonials[currentIndex].image}
-              alt="Customer"
-              className="w-12 h-12 rounded-full border-2 border-gray-300"
-            />
-            <div className="ml-4">
-              <h4 className="text-xl font-semibold text-gray-900">
-                {testimonials[currentIndex].name}
-              </h4>
-              <p className="text-gray-500">{testimonials[currentIndex].role}</p>
-            </div>
-          </div>
-        </motion.div>
+                <div className="mt-6 flex items-center">
+                  <img
+                    src={testimonial.image}
+                    alt="Customer"
+                    className="w-12 h-12 rounded-full border-2 border-gray-300"
+                  />
+                  <div className="ml-4">
+                    <h4 className="text-xl font-semibold text-gray-900">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-gray-500">{testimonial.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+        </div>
       </div>
 
       {/* Indicators */}
       <div className="flex justify-center mt-6">
-        {testimonials.map((_, index) => (
+        {Array.from({ length: totalPages }).map((_, index) => (
           <div
             key={index}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => setCurrentIndex(index * testimonialsToShow)}
             className={`w-3 h-3 rounded-full mx-2 cursor-pointer ${
-              index === currentIndex ? "bg-green-500" : "bg-gray-300"
+              index * testimonialsToShow === currentIndex
+                ? "bg-green-500"
+                : "bg-gray-300"
             }`}
           ></div>
         ))}

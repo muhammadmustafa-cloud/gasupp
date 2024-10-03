@@ -1,5 +1,5 @@
-import  { useEffect, useState } from "react";
-import logo from "../assets/logo.png"; 
+import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 const Loader = () => {
   const [progress, setProgress] = useState(0);
@@ -11,9 +11,9 @@ const Loader = () => {
           clearInterval(interval);
           return 100;
         }
-        return prev + 10; 
+        return prev + 20; // Increase increment to 20
       });
-    }, 200);
+    }, 150); // Decrease interval to 100 milliseconds
 
     return () => clearInterval(interval);
   }, []);
@@ -24,7 +24,6 @@ const Loader = () => {
       <div className="loader-slider-container">
         <div className="loader-slider" style={{ width: `${progress}%` }}></div>
       </div>
-      <div className="loader-percentage">{progress}%</div>
     </div>
   );
 };

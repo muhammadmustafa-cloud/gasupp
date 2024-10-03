@@ -1,12 +1,16 @@
-import service1 from '../assets/service1.jpg'
-import service2 from '../assets/service3.jpg'
-import service3 from '../assets/service4.jpg'
-import service4 from '../assets/service5.jpg'
-import service5 from '../assets/service8.jpg'
-import service6 from '../assets/services2.jpg'
+import battery from '../assets/battery.webp'
+import kiskeliye from "../assets/kiskeliye.jpg";
+import tyre from "../assets/tyre.jpg";
+import fluid from "../assets/fluid.jpg";
+import firstone from "../assets/firstone.jpg";
+import carwash from "../assets/carwash.jpg";
+import wipperr from "../assets/wipperr.jpg";
+import oilchange from "../assets/oilchange.jpg";
 import confirmation from '../assets/confirmation.png'
 import delivery from '../assets/delivery.png'
 import booking from '../assets/booking.png'
+import joy3 from "../assets/joy3.jpg";
+
 import Reviews from './reviews'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -42,164 +46,202 @@ const ServicePage = () => {
             </h5>
           </div>
           <h2 className="md:text-5xl text-3xl font-bold w-[60%] items-center text-center">
-            Trust GasUpp for Dependable Car Care! Anywhere, Anytime.
+            GasUpp offers a variety of automotive services
+            <br /> to keep your car running smoothly and looking great.
           </h2>
         </div>
       </div>
       {/* Services Section */}
       <div className="bg-[#ECF0F9]   ">
+        <h2
+          className={`text-5xl text-center font-semibold blueColor text-black pt-12 w-[20%]}`}
+        >
+          Complete Car Care – <br />Our Comprehensive Service Offerings
+          Include:
+        </h2>
         <div className="flex items-center mx-auto container justify-center gap-6 py-14 flex-wrap">
-          <div id='one' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="one"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service1}
+                src={firstone}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
               <h2 className="text-xl font-semibold">Gas Delivery</h2>
               <p className="text-gray-600 mt-2">
-                Never worry about running out of fuel again. Our quick and reliable gas
-                delivery service brings the fuel you need directly to your location.
-              </p>
-            </div>
-          </div>
-          
-          <div id="two" className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
-              <img
-                src={service2}
-                alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
-              />
-            </div>
-            <div className="mt-10 text-center flex-grow">
-              <h2 className="text-xl font-semibold">Electric Vehicle Charging</h2>
-              <p className="text-gray-600 mt-2">
-                {" "}
-                We offer a convenient pick-up and charging service for
-                electric vehicles. Simply schedule a pick-up, and we&apos;ll charge your vehicle and return it
-                fully powered.
+                Never worry about running out of fuel again. Our quick and
+                reliable gas delivery service brings the fuel you need directly
+                to your location.
               </p>
             </div>
           </div>
 
-          <div id='three' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="two"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service3}
+                src={joy3}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
+              />
+            </div>
+            <div className="mt-10 text-center flex-grow">
+              <h2 className="text-xl font-semibold">
+                Electric Vehicle Charging
+              </h2>
+              <p className="text-gray-600 mt-2">
+                {" "}
+                We offer a convenient pick-up and charging service for electric
+                vehicles. Simply schedule a pick-up, and we&apos;ll charge your
+                vehicle and return it fully powered.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="three"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
+              <img
+                src={wipperr}
+                alt="Electric Charging"
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
               <h2 className="text-xl font-semibold">Wiper Blade Replacement</h2>
               <p className="text-gray-600 mt-2">
                 {" "}
-                Need new wiper blades? We’ll come to your location and
-                replace them on the spot, ensuring optimal visibility during tough weather conditions.
+                Need new wiper blades? We’ll come to your location and replace
+                them on the spot, ensuring optimal visibility during tough
+                weather conditions.
               </p>
             </div>
           </div>
 
-          <div id='four' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="four"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service6}
+                src={tyre}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
-              <h2 className="text-xl font-semibold">
-              Tire Rotation
-              </h2>
+              <h2 className="text-xl font-semibold">Tire Rotation</h2>
               <p className="text-gray-600 mt-2">
                 {" "}
-                Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
+                Maximize the life of your tires with our on-site tire rotation
+                services. We&apos;ll come to your location and ensure even wear
+                on all your tires.
               </p>
             </div>
           </div>
-          <div id='five' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="five"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service6}
+                src={fluid}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
-              <h2 className="text-xl font-semibold">
-              Fluid Top-Up Services
-              </h2>
+              <h2 className="text-xl font-semibold">Fluid Top-Up Services</h2>
               <p className="text-gray-600 mt-2">
                 {" "}
-                We&apos;ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
+                We&apos;ll check and top up your essential vehicle fluids, such
+                as coolant, brake fluid, and windshield washer fluid, to keep
+                your car running smoothly.
               </p>
             </div>
           </div>
 
-          <div id='six' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="six"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service4}
+                src={kiskeliye}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
               <h2 className="text-xl font-semibold">Roadside Assistance</h2>
               <p className="text-gray-600 mt-2">
                 {" "}
-                From tire changes to lockout services, we’re here to help you get
-                back on the road swiftly.
+                From tire changes to lockout services, we’re here to help you
+                get back on the road swiftly.
               </p>
             </div>
           </div>
 
-          <div id='seven' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="seven"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service5}
+                src={carwash}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md"
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
               <h2 className="text-xl font-semibold">Mobile Car Wash</h2>
               <p className="text-gray-600 mt-2">
-                Enjoy a sparkling clean car without leaving your home. Our mobile
-                car wash service provides thorough and convenient cleaning.
+                Enjoy a sparkling clean car without leaving your home. Our
+                mobile car wash service provides thorough and convenient
+                cleaning.
               </p>
             </div>
           </div>
 
-          <div id='eight' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="eight"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service6}
+                src={oilchange}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
-              <h2 className="text-xl font-semibold">
-                Oil Changes
-              </h2>
+              <h2 className="text-xl font-semibold">Oil Changes</h2>
               <p className="text-gray-600 mt-2">
                 {" "}
-                Keep your vehicle running smoothly with our on-site oil change services.
+                Keep your vehicle running smoothly with our on-site oil change
+                services.
               </p>
             </div>
           </div>
 
-          <div id='nine' className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col">
-            <div className="flex justify-center">
+          <div
+            id="nine"
+            className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
+          >
+            <div className="flex justify-center h-[250px] ">
               <img
-                src={service6}
+                src={battery}
                 alt="Electric Charging"
-                className="w-[400px] h-auto rounded-md "
+                className="object-cover h-auto rounded-md "
               />
             </div>
             <div className="mt-10 text-center flex-grow">
@@ -208,12 +250,11 @@ const ServicePage = () => {
               </h2>
               <p className="text-gray-600 mt-2">
                 {" "}
-                Get your car battery replaced or boosted quickly, right
-                at your location.
+                Get your car battery replaced or boosted quickly, right at your
+                location.
               </p>
             </div>
           </div>
-          
         </div>
       </div>
       {/* Why Choose Us */}
@@ -228,12 +269,12 @@ const ServicePage = () => {
         }}
       >
         <div className="bg-[#050C1D] w-full h-full flex flex-col items-center justify-center opacity-80">
-          <div className="flex relative mt-20">
+          {/* <div className="flex relative mt-20">
             <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
             <h5 className="text-2xl absolute text-[#41CB5B] font-normal tracking-wider ">
               Services
             </h5>
-          </div>
+          </div> */}
           <h2
             className={`text-5xl text-center font-semibold blueColor text-white mt-12 w-[20%]}`}
           >
@@ -244,24 +285,22 @@ const ServicePage = () => {
             <div className="flex flex-col h-[320px] bg-white w-[450px]  justify-center items-center px-2 py-8 rounded-xl">
               <img src={booking} className="w-32" alt="" />
               <h5 className="text-2xl mt-3 font-semibold">Request Service</h5>
-              <p className="text-lg text-[#898a9c] w-[60%] text-center">
-                Use our app or website to schedule a gas delivery or
-                automotive service.
+              <p className="text-lg text-[#898a9c] w-[80%] text-center">
+                Use our app or website to schedule a gas delivery or automotive
+                service.
               </p>
             </div>
             <div className="flex flex-col h-[320px] bg-white w-[450px]  justify-center items-center px-2 py-8 rounded-xl">
               <img src={confirmation} className="w-32" alt="" />
               <h5 className="text-2xl mt-3 font-semibold">Get Confirmed </h5>
-              <p className="text-lg text-[#898a9c] w-[60%] text-center">
+              <p className="text-lg text-[#898a9c] w-[80%] text-center">
                 Receive a confirmation with the estimated time of arrival.
               </p>
             </div>
             <div className="flex flex-col h-[320px] bg-white w-[450px]  justify-center items-center px-2 py-8 rounded-xl">
               <img src={delivery} className="w-32" alt="" />
-              <h5 className="text-2xl mt-3 font-semibold">
-                Enjoy Convenience
-              </h5>
-              <p className="text-lg text-[#898a9c] w-[60%] text-center">
+              <h5 className="text-2xl mt-3 font-semibold">Enjoy Convenience</h5>
+              <p className="text-lg text-[#898a9c] w-[80%] text-center">
                 Our team arrives at your location to provide the requested
                 service.
               </p>

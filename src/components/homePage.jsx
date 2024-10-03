@@ -2,6 +2,22 @@ import AchievementSection from "./achievementSection";
 import Reviews from "./reviews";
 import Testimonials from "./testimonials";
 import aboutSection from "../assets/about.jpg";
+import joy1 from "../assets/joy1.jpg";
+import EV from "../assets/ev.png";
+import wiper from "../assets/wiper.png";
+import tyre from "../assets/tyre.png";
+import fluid from "../assets/fluid.png";
+import transport from "../assets/transport.png";
+
+import carwash from "../assets/carwash.png";
+import carfluid from "../assets/carfluid.png";
+import baterryy from "../assets/baterryy.png";
+
+
+
+
+
+
 import { LiaCheckCircleSolid } from "react-icons/lia";
 import staion from "../assets/electric-station.png";
 import { useNavigate } from "react-router-dom";
@@ -68,7 +84,8 @@ const HomePage = () => {
               </h5>
             </div>
             <h2 className="md:text-7xl text-4xl mx-4 md:mx-0 font-bold tracking-wide mt-4">
-              Instant Gas,<br /> Maximum Comfort!
+              Instant Gas,
+              <br /> Maximum Comfort!
             </h2>
             <p className="md:text-xl mx-4 md:mx-0 text-base">
               Your one-stop solution for gas delivery and automotive services,
@@ -142,20 +159,21 @@ const HomePage = () => {
             <button onClick={handleAbout}>Learn More</button>
           </div>
         </div>
+
         <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
           <div className="relative">
             <img
-              src={aboutSection}
-              className="w-full lg:w-[600px] rounded-2xl"
+              src={joy1}
+              className="w-[full] lg:w-[600px] rounded-2xl"
               alt="about-section"
             />
-            <div className="absolute flex flex-col justify-center py-6 lg:py-8 px-2 lg:px-4 rounded-xl gap-2 items-center bg-[#FF6E03] text-white bottom-0">
+            {/* <div className="absolute flex flex-col justify-center py-6 lg:py-8 px-2 lg:px-4 rounded-xl gap-2 items-center bg-[#FF6E03] text-white bottom-0">
               <img src={staion} className="w-[40px] lg:w-[60px]" alt="icon" />
               <h2 className="text-3xl lg:text-5xl font-bold">5+</h2>
               <h6 className="text-sm lg:text-lg font-medium">
                 Years of Experience
               </h6>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -172,15 +190,14 @@ const HomePage = () => {
         }}
       >
         <div className="flex flex-col py-12 md:py-10 justify-center items-center">
-          <div className="flex relative md:mr-0 mr-20">
+          {/* <div className="flex relative md:mr-0 mr-20">
             <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
             <h5 className="text-xl md:text-2xl absolute text-[#41CB5B] font-normal tracking-wider">
               SERVICES
             </h5>
-          </div>
-          <h2 className="text-4xl md:text-7xl text-center font-medium blueColor mt-8 md:mt-12 max-w-[800px]">
-            Best Service for
-            <br /> all types of Vehicle
+          </div> */}
+          <h2 className="text-4xl md:text-7xl text-center font-medium blueColor mt-3 md:mt-3 max-w-[800px]">
+            Best Service For All Types Of Vehicles
           </h2>
           <div>
             <div className="flex flex-wrap items-center justify-center gap-6 mt-12 md:mt-20">
@@ -197,22 +214,22 @@ const HomePage = () => {
                     Gas Delivery
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    Never worry about running out of fuel again. Our quick and reliable gas
-                    delivery service brings the fuel you need directly to your location.
+                    Never worry about running out of fuel again. Our quick and
+                    reliable gas delivery service brings the fuel you need
+                    directly to your location.
                   </p>
                 </div>
-                <button onClick={handleServiceOne} className="px-6  md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceOne}
+                  className="px-6  md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
 
               <div className="bg-[#061129] w-[full] md:h-[450px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
-                  <img
-                    src={staion}
-                    className="w-[60px] md:w-[80px]"
-                    alt="icon"
-                  />
+                  <img src={EV} className="w-[60px] md:w-[80px]" alt="icon" />
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
@@ -220,11 +237,14 @@ const HomePage = () => {
                   </h4>
                   <p className="text-base md:text-lg mt-2">
                     We offer a convenient pick-up and charging service for
-                    electric vehicles. Simply schedule a pick-up, and we&apos;ll charge your vehicle and return it
-                    fully powered.
+                    electric vehicles. Simply schedule a pick-up, and we&apos;ll
+                    charge your vehicle and return it fully powered.
                   </p>
                 </div>
-                <button onClick={handleServiceTwo} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceTwo}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
@@ -232,7 +252,7 @@ const HomePage = () => {
               <div className="bg-[#41CB5B] w-[full] md:h-[450px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
-                    src={staion}
+                    src={wiper}
                     className="w-[60px] md:w-[80px]"
                     alt="icon"
                   />
@@ -243,32 +263,36 @@ const HomePage = () => {
                   </h4>
                   <p className="text-base md:text-lg mt-2">
                     Need new wiper blades? We’ll come to your location and
-                    replace them on the spot, ensuring optimal visibility during tough weather conditions.
+                    replace them on the spot, ensuring optimal visibility during
+                    tough weather conditions.
                   </p>
                 </div>
-                <button onClick={handleServiceThree} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceThree}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
 
-
-              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px]  mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
-                  <img
-                    src={staion}
-                    className="w-[60px] md:w-[80px]"
-                    alt="icon"
-                  />
+                  <img src={tyre} className="w-[60px] md:w-[80px]" alt="icon" />
                 </div>
                 <div className="px-6 md:px-10 my-5 md:my-7">
                   <h4 className="text-2xl md:text-3xl font-semibold">
                     Tire Rotation
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    Maximize the life of your tires with our on-site tire rotation services. We&apos;ll come to your location and ensure even wear on all your tires.
+                    Maximize the life of your tires with our on-site tire
+                    rotation services. We&apos;ll come to your location and
+                    ensure even wear on all your tires.
                   </p>
                 </div>
-                <button onClick={handleServiceFour} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceFour}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
@@ -276,7 +300,7 @@ const HomePage = () => {
               <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-3 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
-                    src={staion}
+                    src={carfluid}
                     className="w-[60px] md:w-[80px]"
                     alt="icon"
                   />
@@ -286,18 +310,23 @@ const HomePage = () => {
                     Fluid Top-Up Services
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    We’ll check and top up your essential vehicle fluids, such as coolant, brake fluid, and windshield washer fluid, to keep your car running smoothly.
+                    We’ll check and top up your essential vehicle fluids, such
+                    as coolant, brake fluid, and windshield washer fluid, to
+                    keep your car running smoothly.
                   </p>
                 </div>
-                <button onClick={handleServiceFive} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceFive}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px]  mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
-                    src={staion}
+                    src={transport}
                     className="w-[60px] md:w-[80px]"
                     alt="icon"
                   />
@@ -307,11 +336,14 @@ const HomePage = () => {
                     Roadside Assistance
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    From tire changes to lockout services, we’re here to help you get
-                    back on the road swiftly.
+                    From tire changes to lockout services, we’re here to help
+                    you get back on the road swiftly.
                   </p>
                 </div>
-                <button onClick={handleServiceSix} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceSix}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
@@ -319,7 +351,7 @@ const HomePage = () => {
               <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-4 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
-                    src={staion}
+                    src={carwash}
                     className="w-[60px] md:w-[80px]"
                     alt="icon"
                   />
@@ -329,19 +361,23 @@ const HomePage = () => {
                     Mobile Car Wash
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    Enjoy a sparkling clean car without leaving your home. Our mobile
-                    car wash service provides thorough and convenient cleaning.
+                    Enjoy a sparkling clean car without leaving your home. Our
+                    mobile car wash service provides thorough and convenient
+                    cleaning.
                   </p>
                 </div>
-                <button onClick={handleServiceSeven} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceSeven}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
 
-              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
+              <div className="bg-[#061129] w-[full] md:h-[360px] md:w-[400px]  mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
-                    src={staion}
+                    src={fluid}
                     className="w-[60px] md:w-[80px]"
                     alt="icon"
                   />
@@ -351,18 +387,21 @@ const HomePage = () => {
                     Oil Changes
                   </h4>
                   <div className="text-base md:text-lg mt-2">
-                    Keep your vehicle running smoothly with our on-site oil change services.
+                    Keep your vehicle running smoothly with our on-site oil
+                    change services.
                   </div>
-                  <button onClick={handleServiceEight} className="px-0 md:px-0 font-medium mt-4 text-lg md:text-xl">
+                  <button
+                    onClick={handleServiceEight}
+                    className="px-0 md:px-0 font-medium mt-4 text-lg md:text-xl"
+                  >
                     Read More
                   </button>
                 </div>
-
               </div>
               <div className="bg-[#41CB5B] w-[full] md:h-[360px] md:w-[400px] mx-4 md:mx-0 py-4 md:py-6 rounded-xl text-white">
                 <div className="px-6 md:px-10 mb-4">
                   <img
-                    src={staion}
+                    src={baterryy}
                     className="w-[60px] md:w-[80px]"
                     alt="icon"
                   />
@@ -372,11 +411,14 @@ const HomePage = () => {
                     Battery Replacement/Boosting
                   </h4>
                   <p className="text-base md:text-lg mt-2">
-                    Get your car battery replaced or boosted quickly, right
-                    at your location.
+                    Get your car battery replaced or boosted quickly, right at
+                    your location.
                   </p>
                 </div>
-                <button onClick={handleServiceNine} className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl">
+                <button
+                  onClick={handleServiceNine}
+                  className="px-6 md:px-10 font-medium mt-4 text-lg md:text-xl"
+                >
                   Read More
                 </button>
               </div>
@@ -385,7 +427,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* <ExtraFacility /> */}
-      <AchievementSection />
+      {/* <AchievementSection /> */}
       {/* <OurTeam /> */}
       <Testimonials page="home" />
       <Reviews />

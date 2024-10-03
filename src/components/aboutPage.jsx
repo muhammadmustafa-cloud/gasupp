@@ -27,7 +27,8 @@ const AboutPage = () => {
             <h5 className="text-xl font-medium mb-5">About GasUpp</h5>
           </div>
           <h2 className="md:text-5xl text-3xl font-bold md:w-[60%] w-full  items-center text-center">
-            Trust GasUpp for Dependable Car Care! Anywhere, Anytime.
+            Trust GasUpp for Dependable Car Care!
+            <br /> Anywhere, Anytime.
           </h2>
         </div>
       </div>
@@ -75,9 +76,6 @@ const AboutPage = () => {
         </div>
       </div> */}
 
-
-      
-
       {/* Best Features */}
       <div className="w-full bg-[#ECF0F9] justify-center items-center flex">
         <div className="my-10 bg-white flex-col md:flex-row-reverse flex w-[90%] md:w-[85%]">
@@ -92,10 +90,14 @@ const AboutPage = () => {
               </h5>
             </div>
             <h1 className="text-4xl md:text-5xl leading-1 font-bold blueColor mt-8">
-              Experience Reliable Car, Care with GasUpp.
+              Experience Reliable Car Care with GasUpp: Your Go-To Car Service
+              Provider.
             </h1>
             <p className="text-lg text-[#898a9c] my-6">
-              GasUpp is dedicated to providing fast and reliable gas delivery and automotive services right to your doorstep. Our mission is to make car care as effortless as possible, offering convenience and peace of mind with every service.
+              GasUpp is dedicated to providing fast and reliable gas delivery
+              and automotive services right to your doorstep. Our mission is to
+              make car care as effortless as possible, offering convenience and
+              peace of mind with every service.
             </p>
             <div className="mt-8">
               <div className="flex flex-col justify-center gap-5 items-center">
@@ -108,7 +110,9 @@ const AboutPage = () => {
                   <div>
                     <h4 className="font-bold text-lg">Reliability</h4>
                     <p className="text-gray-600">
-                      Count on GasUpp for top-notch roadside assistance, car washes, oil changes, wiper blade replacements, and more. We’re your one-stop auto solution.
+                      Count on GasUpp for top-notch roadside assistance, car
+                      washes, oil changes, wiper blade replacements, and more.
+                      We’re your one-stop auto solution.
                     </p>
                   </div>
                 </div>
@@ -121,7 +125,9 @@ const AboutPage = () => {
                   <div>
                     <h4 className="font-bold text-lg">Customer Satisfaction</h4>
                     <p className="text-gray-600">
-                      We deliver premium fuel and services to ensure your vehicle runs smoothly. Trust GasUpp for quality care you can rely on.
+                      We deliver premium fuel and services to ensure your
+                      vehicle runs smoothly. Trust GasUpp for quality care you
+                      can rely on.
                     </p>
                   </div>
                 </div>
@@ -134,7 +140,9 @@ const AboutPage = () => {
                   <div>
                     <h4 className="font-bold text-lg">Convenience</h4>
                     <p className="text-gray-600">
-                      GasUpp brings the gas station to you, saving you time and effort in your busy schedule. Enjoy car care without leaving home.
+                      GasUpp brings the gas station to you, saving you time and
+                      effort in your busy schedule. Enjoy car care without
+                      leaving home.
                     </p>
                   </div>
                 </div>
