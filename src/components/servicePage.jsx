@@ -45,7 +45,7 @@ const ServicePage = () => {
               Premium Automotive Services
             </h5>
           </div>
-          <h2 className="md:text-5xl text-3xl font-bold w-[60%] items-center text-center">
+          <h2 className="md:text-5xl text-3xl font-bold md:w-[60%] w-full  items-center text-center">
             GasUpp offers a variety of automotive services
             <br /> to keep your car running smoothly and looking great.
           </h2>
