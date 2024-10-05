@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
             {/* Company */}
             <div className="text-sm md:flex md:-mt-10 md:flex-col md:justify-center md:items-center md:text-base">
-              <h2 className="text-xl mb-4">Menu</h2>
+              <h2 className="text-xl text-left mb-4">Menu</h2>
               <ul className="flex flex-col md:ml-7 gap-1">
                 <NavLink onClick={() => window.scrollTo(0, 0)} to="/">
                   <li>Home</li>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
             {/* Contact Us */}
             <div className="text-sm md:mt-4 md:text-base">
-              <h2 className="text-xl md:ml-2 mb-4">Contact Us</h2>
+              <h2 className="text-xl text-left ml-2 mb-4">Contact Us</h2>
               <div className="flex flex-col ">
                 <div className="flex items-center gap-3">
                   <div className="buttonbg rounded-full w-10 h-10 flex justify-center items-center">

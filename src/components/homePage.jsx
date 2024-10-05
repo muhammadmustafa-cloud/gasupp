@@ -31,7 +31,7 @@ const HomePage = () => {
                 Welcome to GasUpp
               </h5>
             </div>
-            <h2 className="md:text-7xl text-4xl mx-4 md:mx-0 font-bold tracking-wide mt-4">
+            <h2 className="md:text-7xl text-4xl font-bold ml-5 text-left tracking-wide mt-4">
               Instant Gas,
               <br /> Maximum Comfort!
             </h2>
