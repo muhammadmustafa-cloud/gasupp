@@ -92,7 +92,7 @@ const HomePage = () => {
               available 24/7.
             </p>
             <div className="bg-[#41CB5B] z-50 text-white mx-4 md:mx-0 font-medium md:px-6 px-4 py-2 w-40 md:py-4 md:w-52 text-center rounded-full cursor-pointer">
-              <button>Get Started</button>
+              <button>Call Now</button>
             </div>
           </div>
         </div>
