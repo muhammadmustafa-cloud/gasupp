@@ -57,3 +57,62 @@
   font-weight: bold;
   color: #41CB5B;
 }
+
+
+/* Testimonials */
+.testimonials-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 10px;
+  /* Horizontal margin between cards */
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
+  /* Set a maximum width to control the card size */
+  width: 100%;
+  /* Make the card take full width inside its container */
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.testimonial-role {
+  color: #777;
+}
+
+/* Add padding around the slider for better responsiveness */
+.slick-list {
+  padding: 0 20px;
+}

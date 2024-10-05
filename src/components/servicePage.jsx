@@ -30,7 +30,7 @@ const ServicePage = () => {
     <>
       {/* Header */}
       <div
-        className="h-[250px] w-full overflow-hidden"
+        className="h-[250px] w-full w-full overflow-hidden"
         style={{
           backgroundImage: `url(images/joy5.avif)`,
           backgroundSize: "cover",
@@ -45,15 +45,16 @@ const ServicePage = () => {
               Premium Automotive Services
             </h5>
           </div>
-          <h2 className="md:text-5xl text-3xl font-bold w-[60%] items-center text-center">
-            GasUpp offers a variety of automotive services to keep your car running smoothly and looking great.
+          <h2 className="md:text-5xl text-3xl font-bold md:w-[60%] w-full  items-center text-center">
+            GasUpp offers a variety of automotive services
+            <br /> to keep your car running smoothly and looking great.
           </h2>
         </div>
       </div>
       {/* Services Section */}
       <div className="bg-[#ECF0F9]   ">
         <h2
-          className={`text-5xl text-center font-semibold blueColor text-black pt-12 w-[20%]}`}
+          className={`md:text-5xl text-2xl text-center  font-semibold blueColor text-black pt-12 w-full md:w-[20%]`}
         >
           Complete Car Care – <br />Our Comprehensive Service Offerings
           Include:
@@ -63,7 +64,7 @@ const ServicePage = () => {
             id="one"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={firstone}
                 alt="Electric Charging"
@@ -84,7 +85,7 @@ const ServicePage = () => {
             id="two"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={joy3}
                 alt="Electric Charging"
@@ -108,7 +109,7 @@ const ServicePage = () => {
             id="three"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={wipperr}
                 alt="Electric Charging"
@@ -130,7 +131,7 @@ const ServicePage = () => {
             id="four"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={tyre}
                 alt="Electric Charging"
@@ -151,7 +152,7 @@ const ServicePage = () => {
             id="five"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={fluid}
                 alt="Electric Charging"
@@ -173,7 +174,7 @@ const ServicePage = () => {
             id="six"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={kiskeliye}
                 alt="Electric Charging"
@@ -194,7 +195,7 @@ const ServicePage = () => {
             id="seven"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={carwash}
                 alt="Electric Charging"
@@ -215,7 +216,7 @@ const ServicePage = () => {
             id="eight"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={oilchange}
                 alt="Electric Charging"
@@ -236,7 +237,7 @@ const ServicePage = () => {
             id="nine"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] ">
+            <div className="flex justify-center h-[250px] w-full ">
               <img
                 src={battery}
                 alt="Electric Charging"

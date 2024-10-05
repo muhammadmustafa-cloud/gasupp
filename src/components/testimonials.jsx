@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React from "react";
+import Slider from "react-slick";
 import img from "../assets/2.jpg";
-import { motion } from "framer-motion";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
@@ -69,10 +70,8 @@ const testimonials = [
   },
 ];
 
-const Testimonials = ({ page }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const testimonialsToShow = 3;
-  const totalPages = Math.ceil(testimonials.length / testimonialsToShow);
+const Testimonials = ({page}) => {
+
 
   const bgColor =
     page === "home"
@@ -87,112 +86,52 @@ const Testimonials = ({ page }) => {
       ? "text-white"
       : "text-white";
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0
-        ? testimonials.length - testimonialsToShow
-        : prevIndex - testimonialsToShow
-    );
-  };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + testimonialsToShow >= testimonials.length
-        ? 0
-        : prevIndex + testimonialsToShow
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, 
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div
-      className={`flex flex-col justify-center items-center pb-5 ${bgColor}`}
-    >
-      <div className="flex relative mt-10">
-        <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
-        <h5 className="text-2xl absolute text-[#41CB5B] font-normal tracking-wider">
-          Testimonial
-        </h5>
-      </div>
-
-      <h2
-        className={`text-3xl md:text-5xl text-center font-semibold ${textColor} mt-12 w-full md:w-[50%] lg:w-[60%]`}
-      >
-        What Our Clients Say About Us
-      </h2>
-
-      <div className="relative flex justify-center items-center mt-12 w-full px-4">
-        <div className="flex space-x-4 items-center mx-auto container">
-          {testimonials
-            .slice(currentIndex, currentIndex + testimonialsToShow)
-            .map((testimonial) => (
-              <motion.div
-                className="bg-white rounded-lg shadow-lg p-8 w-full sm:w-[90%] md:w-[45%] lg:w-[30%]"
-                key={testimonial.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="relative -top-6 bg-green-500 w-12 h-12 flex items-center justify-center rounded-full">
-                  <svg
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"
-                    ></path>
-                  </svg>
-                </div>
-
-                <p className="text-gray-600 text-lg">{testimonial.text}</p>
-
-                <div className="mt-6 flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt="Customer"
-                    className="w-12 h-12 rounded-full border-2 border-gray-300"
-                  />
-                  <div className="ml-4">
-                    <h4 className="text-xl font-semibold text-gray-900">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-gray-500">{testimonial.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+    <div className={` ${bgColor} ${textColor} `}>
+      <div className="testimonials-container  mx-auto container">
+        <div className="flex flex-col justify-center items-center pb-5">
+          <div className="flex relative mt-10">
+            <span className="bg-[#41CB5B] h-[2px] w-[50px] top-4 right-4 absolute"></span>
+            <h5 className="text-2xl absolute text-[#41CB5B] font-normal tracking-wider">
+              Testimonial
+            </h5>
+          </div>
+          <h2
+            className={`text-3xl md:text-5xl text-center font-semibold ${textColor} mt-12 w-full md:w-[50%] lg:w-[60%]`}
+          >
+            What Our Clients Say About Us
+          </h2>{" "}
         </div>
-      </div>
-
-      {/* Indicators */}
-      <div className="flex justify-center mt-6">
-        {Array.from({ length: totalPages }).map((_, index) => (
-          <div
-            key={index}
-            onClick={() => setCurrentIndex(index * testimonialsToShow)}
-            className={`w-3 h-3 rounded-full mx-2 cursor-pointer ${
-              index * testimonialsToShow === currentIndex
-                ? "bg-green-500"
-                : "bg-gray-300"
-            }`}
-          ></div>
-        ))}
-      </div>
-
-      {/* Pagination Buttons */}
-      <div className="flex justify-between w-full mt-4">
-        <button onClick={handlePrev} className="text-2xl text-gray-600">
-          <IoIosArrowBack />
-        </button>
-        <button onClick={handleNext} className="text-2xl text-gray-600">
-          <IoIosArrowForward />
-        </button>
+        <Slider {...settings}>
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-card mx-auto">
+              <img src={testimonial.image} alt={testimonial.name} />
+              <p className="testimonial-text">{testimonial.text}</p>
+              <h4 className="testimonial-name">{testimonial.name}</h4>
+              <h5 className="testimonial-role">{testimonial.role}</h5>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

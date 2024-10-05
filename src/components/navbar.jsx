@@ -29,8 +29,10 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex bg-white bg-opacity-90 md:bg-opacity-70 md:mx-0 mx-4 sticky top-0 z-40 md:justify-around justify-between md:px-0 px-2 items-center transition-all duration-300 ${
-        scrolled ? "md:rounded-lg rounded-full shadow-lg mt-8 h-16 md:top-0 top-4 md:h-[90px] md:mt-0" : "rounded-none"
+      className={`flex bg-white mx-auto container  bg-opacity-90 md:bg-opacity-100  sticky top-0 z-40 md:justify-around justify-between md:px-0 px-2 items-center transition-all duration-300 ${
+        scrolled
+          ? "md:rounded-lg rounded-full shadow-lg md:justify-evenly mt-8 h-16 md:top-0 top-4 md:h-[90px] md:mt-0"
+          : "rounded-none"
       }`}
     >
       <div className="">
