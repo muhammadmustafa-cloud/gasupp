@@ -13,7 +13,7 @@ const Footer = () => {
                 <img className="w-40 sm:w-48 h-auto" src={logo} alt="logo" />
               </NavLink>
               <div className="ml-10 md:ml-12">
-                <p className="text-sm -mt-4 md:text-base">
+                <p className="text-sm text-justify -mt-4 md:text-base">
                   GasUpp is dedicated to providing fast and reliable gas
                   delivery and automotive services right to your doorstep.
                 </p>

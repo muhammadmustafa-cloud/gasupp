@@ -18,7 +18,7 @@ const Accessibility = () => {
       </div>
       <div className="bg-[#050C1D] text-white px-24 py-12">
         <h2 className="text-3xl font-bold mb-8 text-center">
-          Effective Date: August 5, 2024
+        Effective Date: August 5, 2024
         </h2>
         <p className="text-lg leading-8 mb-5">
         At GasUpp, we are committed to providing a website and mobile app that is accessible to all users, including those with disabilities. We aim to comply with accessibility standards to ensure an inclusive experience for all users.
@@ -34,20 +34,20 @@ const Accessibility = () => {
           2. Key Accessibility Features
         </h2>
         <p className="text-lg leading-8 mb-5">
-          GasUpp incorporates the following accessibility features:
+        GasUpp incorporates the following accessibility features:
         </p>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-lg leading-8">
-            Text alternatives for non-text content (such as images and buttons)
+          Text alternatives for non-text content (such as images and buttons)
           </li>
           <li className="text-lg leading-8">
-            Keyboard navigation throughout the website and app
+          Keyboard navigation throughout the website and app
           </li>
           <li className="text-lg leading-8">
-            Support for screen readers and assistive technologies
+          Support for screen readers and assistive technologies
           </li>
           <li className="text-lg leading-8">
-            Clear and consistent navigation for easy site usage
+          Clear and consistent navigation for easy site usage
           </li>
         </ul>
 
@@ -60,18 +60,18 @@ const Accessibility = () => {
 
         <h2 className="text-4xl font-bold mt-10 mb-5">Contact Us</h2>
         <p className="text-lg leading-8 mb-5">
-          If you have any questions or concerns about this Accessibility
-          Statement, please contact us at:
+        If you encounter any accessibility issues or have any feedback about our website or mobile app, please contact us:
         </p>
-
-        <div className="flex items-center gap-3">
+       <div className="ml-16">
+       <div className="flex items-center gap-3">
           <h2 className="text-xl font-bold mb-5">Email:</h2>
-          <p className="text-lg leading-8 mb-5">info@gasupp.com</p>
+          <p className="text-lg leading-8 mb-5">accessibility@gasupp.com</p>
         </div>
         <div className="flex items-center gap-3">
           <h2 className="text-xl font-bold mb-5">Phone:</h2>
-          <p className="text-lg leading-8 mb-5">765-413-9667</p>
+          <p className="text-lg leading-8 mb-5">407-259-5949</p>
         </div>
+       </div>
       </div>
     </>
   );

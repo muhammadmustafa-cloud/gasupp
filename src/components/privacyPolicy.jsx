@@ -18,23 +18,19 @@ const PrivacyPolicy = () => {
       </div>
       <div className="bg-[#050C1D] text-white px-6 sm:px-12 lg:px-24 py-12">
         <p className="text-base md:text-lg leading-8 mb-5">
-          GasUpp (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed
-          to protecting the privacy of our users (&quot;you&quot;,
-          &quot;your&quot;). This Privacy Policy outlines how we collect, use,
-          disclose, and safeguard your information when you visit our website,
-          use our mobile app, or engage with our services. By accessing or using
-          GasUpp, you agree to this Privacy Policy.
+        GasUpp ("we", "us", "our") is committed to protecting the privacy of our users ("you", "your"). This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website, use our mobile app, or engage with our services. By accessing or using GasUpp, you agree to this Privacy Policy.
         </p>
 
         <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
           1. Information We Collect{" "}
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
-          We collect the following types of information:
+        We collect the following types of information:
         </p>
 
         <h3 className="text-xl leading-8 mb-2">a. Personal Information: </h3>
         <ul className="list-disc list-inside ml-10 mb-5">
+          <h1 className="text-base md:text-lg leading-8">This includes any information that identifies you as an individual, such as:</h1>
           <li className="text-base md:text-lg leading-8">Full Name</li>
           <li className="text-base md:text-lg leading-8">Email Address</li>
           <li className="text-base md:text-lg leading-8">Phone Number</li>
@@ -54,10 +50,7 @@ const PrivacyPolicy = () => {
         </h3>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-            We may collect non-personal information such as browser type, IP
-            address, and usage data when you interact with our website or app.
-            This information does not identify you personally and helps us
-            improve our services.
+          We may collect non-personal information such as browser type, IP address, and usage data when you interact with our website or app. This information does not identify you personally and helps us improve our services.
           </li>
         </ul>
 
@@ -65,24 +58,26 @@ const PrivacyPolicy = () => {
           2. How We Collect Information
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
-          We collect your information in the following ways:
+        We collect your information in the following ways:
         </p>
 
         <h3 className="text-xl leading-8 mb-2">a. Information You Provide: </h3>
         <ul className="list-disc list-inside ml-10 mb-5">
+          <h4 className="text-base md:text-lg leading-8">
+          We collect the personal information you provide when:
+          </h4>
           <li className="text-base md:text-lg leading-8">
-            You create an account
+          You create an account
           </li>
           <li className="text-base md:text-lg leading-8">
-            Request a service (Gas Delivery, Electric Vehicle Charging, Wiper
-            Blade Replacements, etc).
+          Request a service (Gas Delivery, Electric Vehicle Charging, Wiper Blade Replacements, etc.)
           </li>
           <li className="text-base md:text-lg leading-8">Make a payment</li>
           <li className="text-base md:text-lg leading-8">
-            Contact us for support or inquiries
+          Contact us for support or inquiries
           </li>
           <li className="text-base md:text-lg leading-8">
-            Subscribe to newsletters
+          Subscribe to newsletters
           </li>
         </ul>
 
@@ -91,18 +86,14 @@ const PrivacyPolicy = () => {
         </h3>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-            We use cookies, web beacons, and other tracking technologies to
-            automatically collect data about your browsing activities when you
-            interact with our website or app.
+          We use cookies, web beacons, and other tracking technologies to automatically collect data about your browsing activities when you interact with our website or app.
           </li>
         </ul>
 
         <h3 className="text-xl leading-8 mb-2">c. Third-Party Services:</h3>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-            We may collect information from third-party services (such as
-            payment processors) when you use these services on our website or
-            app.
+          We may collect information from third-party services (such as payment processors) when you use these services on our website or app.
           </li>
         </ul>
 
@@ -110,28 +101,27 @@ const PrivacyPolicy = () => {
           3. How We Use Your Information
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
-          We use your personal information to:
+        We use your personal information to:
         </p>
 
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-            Provide you with gas delivery, electric vehicle charging, wiper
-            blade replacement, and other automotive services.
+          Provide you with gas delivery, electric vehicle charging, wiper blade replacement, and other automotive services
           </li>
           <li className="text-base md:text-lg leading-8">
-            Process your payments and transactions.
+          Process your payments and transactions
           </li>
           <li className="text-base md:text-lg leading-8">
-            Communicate with you regarding your orders, updates, and promotions.
+          Communicate with you regarding your orders, updates, and promotions
           </li>
           <li className="text-base md:text-lg leading-8">
-            Improve our website, mobile app, and service offerings.
+          Improve our website, mobile app, and service offerings
           </li>
           <li className="text-base md:text-lg leading-8">
-            Comply with legal obligations.
+          Comply with legal obligations
           </li>
           <li className="text-base md:text-lg leading-8">
-            Prevent fraud or illegal activities.
+          Prevent fraud or illegal activities
           </li>
         </ul>
 
@@ -139,25 +129,20 @@ const PrivacyPolicy = () => {
           4. How We Share Your Information
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
-          We may share your information in the following circumstances:
+        We may share your information in the following circumstances:
         </p>
 
         <h3 className="text-xl leading-8 mb-2">a. Service Providers:</h3>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-            We may share your information with trusted third-party service
-            providers who assist us in delivering our services (e.g., gas
-            stations, mobile car wash providers, roadside assistance operators).
-            These service providers are bound by confidentiality agreements.
+          We may share your information with trusted third-party service providers who assist us in delivering our services (e.g., gas stations, mobile car wash providers, roadside assistance operators). These service providers are bound by confidentiality agreements.
           </li>
         </ul>
 
         <h3 className="text-xl leading-8 mb-2">b. Business Transfers:</h3>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-            In the event of a merger, acquisition, or sale of all or a portion
-            of our business, your information may be transferred as part of that
-            transaction.
+          In the event of a merger, acquisition, or sale of all or a portion of our business, your information may be transferred as part of that transaction.
           </li>
         </ul>
 
@@ -167,20 +152,20 @@ const PrivacyPolicy = () => {
         </p>
         <ul className="list-disc list-inside ml-10 mb-5">
           <li className="text-base md:text-lg leading-8">
-          Comply with legal processes or government requests.
+          Comply with legal processes or government requests
           </li>
           <li className="text-base md:text-lg leading-8">
-          Protect our rights and property.
+          Protect our rights and property
           </li>
           <li className="text-base md:text-lg leading-8">
-          Prevent fraud or illegal activity.
+          Prevent fraud or illegal activity
           </li>
           <li className="text-base md:text-lg leading-8">
-          Ensure the safety of our users.
+          Ensure the safety of our users
           </li>
         </ul>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        {/* <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
           5. Your Rights
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -207,7 +192,7 @@ const PrivacyPolicy = () => {
           <li className="text-base md:text-lg leading-8">
             The right to withdraw consent at any time.
           </li>
-        </ul>
+        </ul> */}
 
         <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
           5. Data Security
@@ -273,13 +258,15 @@ const PrivacyPolicy = () => {
           7. Contact Us
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
-          If you have any questions or concerns about this Privacy Policy or our
-          data practices, please contact us at{" "}
+        If you have any questions or concerns about this Privacy Policy, please contact us at:
           
         </p>
-        <p className="text-lg leading-8 mb-5">GasUpp</p>
+        <div className="ml-16">
+        <p className="text-lg leading-8">GasUpp</p>
         <p className="text-lg leading-8 mb-5">
-          5118 Cassatt Ave, Orlando, FL 32808
+        1 GasUpp Road<br/>
+Orlando, FL, 32808
+
         </p>
 
         <div className="flex items-center gap-3">
@@ -288,7 +275,8 @@ const PrivacyPolicy = () => {
         </div>
         <div className="flex items-center gap-3">
           <h2 className="text-xl font-bold mb-5">Phone:</h2>
-          <p className="text-lg leading-8 mb-5">765-413-9667</p>
+          <p className="text-lg leading-8 mb-5">407-259-5949</p>
+        </div>
         </div>
       </div>
     </>
