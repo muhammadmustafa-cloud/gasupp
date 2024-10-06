@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         GasUpp ("we", "us", "our") is committed to protecting the privacy of our users ("you", "your"). This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website, use our mobile app, or engage with our services. By accessing or using GasUpp, you agree to this Privacy Policy.
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           1. Information We Collect{" "}
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           2. How We Collect Information
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           3. How We Use Your Information
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -125,7 +125,7 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           4. How We Share Your Information
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -165,7 +165,7 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
 
-        {/* <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        {/* <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           5. Your Rights
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -194,19 +194,19 @@ const PrivacyPolicy = () => {
           </li>
         </ul> */}
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           5. Data Security
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
         We implement appropriate security measures to protect your information from unauthorized access, disclosure, alteration, and destruction. However, no internet-based service is completely secure. We cannot guarantee the absolute security of your data.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           6. Data Retention
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
         We retain your personal information for as long as necessary to provide our services or as required by law. Once your information is no longer needed, we will securely delete or anonymize it.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           7. Your Choices
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
@@ -229,32 +229,32 @@ const PrivacyPolicy = () => {
           To exercise these rights, please contact us at info@gasupp.com.
           </h4>
         </ul>
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           8. Children's Privacy
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
         GasUpp is not intended for children under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have collected information from a child, we will take steps to delete it.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           9. Third-Party Links
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
         Our website may contain links to third-party websites. This Privacy Policy applies only to GasUpp’s website and app. We are not responsible for the privacy practices or content of third-party sites.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           10. International Data Transfers
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
         If you are located outside the United States and choose to use our services, please note that your information may be transferred, stored, and processed in the United States. By using our services, you consent to the transfer of your data to the U.S.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           11. Changes to This Privacy Policy
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">
         We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-5">
+        <h2 className="text-2xl text-left md:text-3xl font-bold mt-10 mb-5">
           7. Contact Us
         </h2>
         <p className="text-base md:text-lg leading-8 mb-5">

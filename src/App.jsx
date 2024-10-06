@@ -15,17 +15,35 @@ import GoToTop from "./components/goToTop";
 import FAQPage from "./components/FAQPage";
 import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
+import SubscribeModal from "./components/subscribeModal";
 
 function App() {
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); 
+      setLoading(false);
     }, 2000);
 
-    return () => clearTimeout(timer); 
+    const modalTimer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 130000); // 2 minutes (120,000 milliseconds)
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(modalTimer);
+    };
   }, []);
+
+  const handleCloseModal = () => setIsModalOpen(false);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Process the form data here
+    handleCloseModal();
+    alert("Thank you for subscribing! You’ll receive a 20% discount.");
+  };
 
   return (
     <>
@@ -48,6 +66,11 @@ function App() {
             </Routes>
             <Footer />
             <GoToTop />
+            <SubscribeModal
+              isOpen={isModalOpen}
+              onClose={handleCloseModal}
+              onSubmit={handleFormSubmit}
+            />
           </>
         )}
       </BrowserRouter>

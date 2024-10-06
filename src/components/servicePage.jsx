@@ -85,7 +85,7 @@ const ServicePage = () => {
             id="two"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] w-full ">
+            <div className="flex justify-center h-[250px]! w-full ">
               <img
                 src={joy3}
                 alt="Electric Charging"
@@ -109,7 +109,7 @@ const ServicePage = () => {
             id="three"
             className="bg-white rounded-lg shadow-xl p-6 w-[400px] md:mx-0 mx-4 h-[450px] flex flex-col"
           >
-            <div className="flex justify-center h-[250px] w-full ">
+            <div className="flex justify-center h-[250px]! w-full ">
               <img
                 src={wipperr}
                 alt="Electric Charging"

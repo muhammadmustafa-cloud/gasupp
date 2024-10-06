@@ -26,7 +26,7 @@ const AboutPage = () => {
             <span className="bg-[#41CB5B] h-[3px] rounded-xl right-36 w-[50px] top-3 absolute"></span>
             <h5 className="text-xl font-medium mb-5">About GasUpp</h5>
           </div>
-          <h2 className="md:text-5xl text-3xl font-bold md:w-[60%] w-full  items-center text-center">
+          <h2 className="md:text-5xl text-2xl font-bold md:w-[60%] w-full  items-center text-center">
             Trust GasUpp for Dependable Car Care!
             <br /> Anywhere, Anytime.
           </h2>

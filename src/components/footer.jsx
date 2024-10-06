@@ -92,10 +92,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="justify-between md:px-10 flex md:w-[90%] pb-5 md:pb-7">
+          <div className="justify-between lg:px-10 flex md:w-[90%] pb-5 md:pb-7">
             <h5 className="text-[#898a9c] ml-2 md:ml-10">© 2024 GasUpp</h5>
             <div className="flex">
-              <ul className="flex gap-8 mr-10 text-[#898a9c]">
+              <ul className="flex gap-8 lg:-mr-4  text-[#898a9c]">
                 <NavLink
                   onClick={() => window.scrollTo(0, 0)}
                   to="/privacy-policy"
