@@ -2,7 +2,7 @@ const TermServices = () => {
   return (
     <>
       <div
-        className="h-[500px] w-full"
+        className="md:h-[500px] h-[200px] w-full"
         style={{
           backgroundImage: `url(images/bread-bg.jpg)`,
           backgroundSize: "cover",

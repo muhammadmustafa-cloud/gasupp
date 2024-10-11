@@ -2,7 +2,7 @@ const Accessibility = () => {
   return (
     <>
       <div
-        className="h-[500px] w-full"
+        className="md:h-[500px] h-[200px] w-full"
         style={{
           backgroundImage: `url(images/bread-bg.jpg)`,
           backgroundSize: "cover",
@@ -11,12 +11,12 @@ const Accessibility = () => {
         }}
       >
         <div className="w-full h-full flex flex-col justify-center items-center text-white bg-[#021017] opacity-80">
-          <h2 className="text-5xl font-bold w-[60%] items-center text-center">
+        <h2 className="text-4xl md:text-5xl font-bold md:w-[60%] w-full text-center">
             Accessibility Statement
           </h2>
         </div>
       </div>
-      <div className="bg-[#050C1D] text-white px-24 py-12">
+      <div className="bg-[#050C1D] text-white px-5 md:px-24 py-12">
         <h2 className="text-3xl font-bold mb-8 text-center">
         Effective Date: August 5, 2024
         </h2>
