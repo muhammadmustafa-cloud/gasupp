@@ -30,7 +30,7 @@ const ServicePage = () => {
     <>
       {/* Header */}
       <div
-        className="h-[250px] w-full w-full overflow-hidden"
+        className="h-[250px] w-full overflow-hidden"
         style={{
           backgroundImage: `url(images/joy5.avif)`,
           backgroundSize: "cover",

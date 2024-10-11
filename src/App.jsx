@@ -26,13 +26,13 @@ function App() {
       setLoading(false);
     }, 2000);
 
-    // const modalTimer = setTimeout(() => {
-    //   setIsModalOpen(true);
-    // }, 130000); // 2 minutes (120,000 milliseconds)
+    const modalTimer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 130000); // 2 minutes (120,000 milliseconds)
 
     return () => {
       clearTimeout(timer);
-      // clearTimeout(modalTimer);
+      clearTimeout(modalTimer);
     };
   }, []);
 
