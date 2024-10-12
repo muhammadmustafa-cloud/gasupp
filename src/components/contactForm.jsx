@@ -17,7 +17,7 @@ function ContactForm() {
     return emailRegex.test(email);
   };
 
-   
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = {};
@@ -71,8 +71,8 @@ function ContactForm() {
 
   return (
     <div>
-      <form
-        onSubmit={handleSubmit}
+      <form action="mailto:info@gasupp.com" method="post" encType="text/plain"
+        // onSubmit={handleSubmit}
         className="p-4 md:p-8 text-white w-full mx-auto rounded-lg"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4">
@@ -92,21 +92,28 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email Address"
-            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${
-              errors.email ? "border-red-500" : ""
-            }`}
+            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${errors.email ? "border-red-500" : ""
+              }`}
             required
           />
           {errors.email && <p className="text-red-500">{errors.email}</p>}
           <input
-            type="text"
+            type="text" // Change this to "text" to allow control over input length
             name="phoneNumber"
             value={number}
-            onChange={(e) => setNumber(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              // Ensure only numbers are entered and limit the input to 10 digits
+              if (/^\d{0,10}$/.test(value)) {
+                setNumber(value);
+              }
+            }}
             placeholder="Your Phone Number"
             className="bg-transparent border-2 rounded-md focus:outline-none p-2"
+            maxLength={10} // Set maxLength to 10
             required
           />
+
           <select
             name="subject"
             value={subject}
@@ -137,19 +144,19 @@ function ContactForm() {
               Oil Change
             </option>
             <option className="text-black" value="Wiper Blade Replacement">
-            Wiper Blade Replacement
+              Wiper Blade Replacement
             </option>
             <option className="text-black" value="Tire Rotation">
-            Tire Rotation
+              Tire Rotation
             </option>
             <option className="text-black" value="Fluid Top-Up">
-            Fluid Top-Up
+              Fluid Top-Up
             </option>
             <option className="text-black" value="Battery Replacement/Boosting">
-            Battery Replacement/Boosting
+              Battery Replacement/Boosting
             </option>
             <option className="text-black" value="Subscription Inquiry">
-            Subscription Inquiry
+              Subscription Inquiry
             </option>
             <option className="text-black" value="Other">
               Other
@@ -213,7 +220,7 @@ function ContactForm() {
         <div>
           <NavLink onClick={() => window.scrollTo(0, 0)} to="/privacy-policy">
             <p className="text-center underline italic">
-            
+
             </p>
             <p className=""><span className="text-center underline italic">Privacy Notice: </span>Your privacy is important to us. We will only use the information provided to respond to your inquiry and will not share it with third parties.</p>
           </NavLink>
@@ -235,10 +242,10 @@ function ContactForm() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-white p-8 rounded-lg shadow-lg text-center animate-fade-in">
             <h2 className="text-3xl font-bold text-[#41CB5B]">
-              Congratulations!
+            Thank you for contacting us
             </h2>
             <p className="mt-4 text-lg text-gray-700">
-              You just got 20% discount on your first order!
+            A representative will be in touch with you as soon as possible.
             </p>
             <button
               onClick={closeModal}

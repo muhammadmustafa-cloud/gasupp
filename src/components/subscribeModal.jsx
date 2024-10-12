@@ -53,7 +53,7 @@ function SubscribeModal({ isOpen, onClose, onSubmit }) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-      <h2 className="text-3xl font-bold items-center text-center">Subscribe Now</h2>
+        <h2 className="text-3xl font-bold items-center text-center">Subscribe Now</h2>
         <p className="text-xl font-normal items-center text-center">Fill in your details and get 20% off!</p>
         <form onSubmit={handleSubmit}>
           <input
@@ -77,14 +77,22 @@ function SubscribeModal({ isOpen, onClose, onSubmit }) {
           />
           {errors.email && <p className="text-red-500">{errors.email}</p>}
           <input
-            type="text"
+            type="text" // Change this to "text" to allow control over input length
             name="phoneNumber"
             value={number}
-            onChange={(e) => setNumber(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              // Ensure only numbers are entered and limit the input to 10 digits
+              if (/^\d{0,10}$/.test(value)) {
+                setNumber(value);
+              }
+            }}
             placeholder="Your Phone Number"
             className="bg-transparent border-2 rounded-md focus:outline-none p-2"
+            maxLength={10} // Set maxLength to 10
             required
           />
+
           <div className="flex gap-5 items-center justify-center">
             <button
               type="submit"
