@@ -40,7 +40,9 @@ const HomePage = () => {
               available 24/7.
             </p>
             <div className="bg-[#41CB5B] z-50 text-white mx-4 md:mx-0 font-medium md:px-6 px-4 py-2 w-40 md:py-4 md:w-52 text-center rounded-full cursor-pointer">
-              <button href="tel:4072595949">Call Now</button>
+              <a href="tel:4072595949">
+                <button>Call Now</button>
+              </a>
             </div>
           </div>
         </div>
@@ -126,7 +128,7 @@ const HomePage = () => {
         </div>
       </div>
 
-   
+
 
       <ServicesComponent />
       {/* <ExtraFacility /> */}
