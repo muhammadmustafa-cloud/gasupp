@@ -110,7 +110,8 @@ function ContactForm() {
             }}
             placeholder="Your Phone Number"
             className="bg-transparent border-2 rounded-md focus:outline-none p-2"
-            maxLength={10} // Set maxLength to 10
+            maxLength={10} 
+            minLength={10} 
             required
           />
 
