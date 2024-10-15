@@ -53,7 +53,7 @@ function SubscribeModal({ isOpen, onClose, onSubmit }) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h2 className="text-3xl font-bold items-center text-center">Subscribe Now</h2>
+        <h2 className="text-2xl font-bold items-center text-center">Try Any Of Our Services.</h2>
         <p className="text-xl font-normal items-center text-center">Fill in your details and get 20% off!</p>
         <form onSubmit={handleSubmit}>
           <input
@@ -77,22 +77,26 @@ function SubscribeModal({ isOpen, onClose, onSubmit }) {
           />
           {errors.email && <p className="text-red-500">{errors.email}</p>}
           <input
-            type="text" // Change this to "text" to allow control over input length
+            type="text"
             name="phoneNumber"
             value={number}
             onChange={(e) => {
-              const value = e.target.value;
-              // Ensure only numbers are entered and limit the input to 10 digits
-              if (/^\d{0,10}$/.test(value)) {
+              let value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+              if (value.length <= 10) {
+                if (value.length > 6) {
+                  value = value.replace(/^(\d{3})(\d{3})(\d+)/, '$1-$2-$3'); // Format as 123-456-7890
+                } else if (value.length > 3) {
+                  value = value.replace(/^(\d{3})(\d+)/, '$1-$2'); // Format as 123-456
+                }
                 setNumber(value);
               }
             }}
-            placeholder="Your Phone Number"
+            placeholder="Enter 10-digit Number"
             className="bg-transparent border-2 rounded-md focus:outline-none p-2"
-            maxLength={10} 
-            minLength={10} 
+            maxLength={12} // Adjusted to account for the dashes
             required
           />
+
 
           <div className="flex gap-5 items-center justify-center">
             <button

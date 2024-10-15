@@ -114,7 +114,7 @@ const HomePage = () => {
           <div className="relative">
             <img
               src={joy1}
-              className="w-[full] lg:w-[600px] rounded-2xl"
+              className="w-[full] lg:ml-14 lg:w-[500px] rounded-2xl"
               alt="about-section"
             />
             {/* <div className="absolute flex flex-col justify-center py-6 lg:py-8 px-2 lg:px-4 rounded-xl gap-2 items-center bg-[#FF6E03] text-white bottom-0">

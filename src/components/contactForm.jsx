@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { NavLink } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -17,7 +18,9 @@ function ContactForm() {
     return emailRegex.test(email);
   };
 
-
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = {};
@@ -98,22 +101,26 @@ function ContactForm() {
           />
           {errors.email && <p className="text-red-500">{errors.email}</p>}
           <input
-            type="text" // Change this to "text" to allow control over input length
+            type="text"
             name="phoneNumber"
             value={number}
             onChange={(e) => {
-              const value = e.target.value;
-              // Ensure only numbers are entered and limit the input to 10 digits
-              if (/^\d{0,10}$/.test(value)) {
+              let value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+              if (value.length <= 10) {
+                if (value.length > 6) {
+                  value = value.replace(/^(\d{3})(\d{3})(\d+)/, '$1-$2-$3'); // Format as 123-456-7890
+                } else if (value.length > 3) {
+                  value = value.replace(/^(\d{3})(\d+)/, '$1-$2'); // Format as 123-456
+                }
                 setNumber(value);
               }
             }}
-            placeholder="Your Phone Number"
+            placeholder="Enter 10-digit Number"
             className="bg-transparent border-2 rounded-md focus:outline-none p-2"
-            maxLength={10} 
-            minLength={10} 
+            maxLength={12} // Adjusted to account for the dashes
             required
           />
+
 
           <select
             name="subject"
@@ -216,7 +223,10 @@ function ContactForm() {
             />
           </div>
         </div>
-
+        <ReCAPTCHA
+    sitekey="6LdkmGEqAAAAAKWtCn-UuRQZrk5GSnrUa27aZ2BJ"
+    onChange={onChange}
+  />
         {/* Privacy Policy */}
         <div>
           <NavLink onClick={() => window.scrollTo(0, 0)} to="/privacy-policy">
@@ -243,10 +253,10 @@ function ContactForm() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-white p-8 rounded-lg shadow-lg text-center animate-fade-in">
             <h2 className="text-3xl font-bold text-[#41CB5B]">
-            Thank you for contacting us
+              Thank you for contacting us
             </h2>
             <p className="mt-4 text-lg text-gray-700">
-            A representative will be in touch with you as soon as possible.
+              A representative will be in touch with you as soon as possible.
             </p>
             <button
               onClick={closeModal}
