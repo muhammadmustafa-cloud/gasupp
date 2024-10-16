@@ -135,8 +135,8 @@ const Testimonials = ({page}) => {
             <div key={testimonial.id} className="testimonial-card mx-auto">
               <img src={testimonial.image} alt={testimonial.name} />
               <p className="text-justify testimonial-text">{testimonial.text}</p>
-              <h4 className="testimonial-name">{testimonial.name}</h4>
-              <h5 className="testimonial-role">{testimonial.role}</h5>
+              <h4 className="text-left testimonial-name">{testimonial.name}</h4>
+              <h5 className="text-left testimonial-role">{testimonial.role}</h5>
             </div>
           ))}
         </Slider>
