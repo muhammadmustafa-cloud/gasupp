@@ -14,6 +14,12 @@ const ContactUsPage = () => {
   const handleQuestionClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index); // Toggle between active FAQs
   };
+  const scrollToMap = () => {
+    const mapElement = document.getElementById("map-iframe");
+    if (mapElement) {
+      mapElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const navigate = useNavigate();
   return (
     <>
@@ -44,25 +50,17 @@ const ContactUsPage = () => {
           <div className="flex flex-col h-[320px] bg-white shadow-2xl w-[350px] rounded-2xl justify-center items-center px-2 py-8">
             <FaLocationDot color="#41CB5B" size="50" />
             <h5 className="text-2xl mt-3 font-semibold">Location</h5>
-            <a
-              href="https://maps.app.goo.gl/tRSH2fdRJ5uYAhis9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg text-[#898a9c] mt-3 w-[80%] text-center"
-            >
+            <h4 className="text-lg text-[#898a9c] mt-3 w-[80%] text-center">
               1 GasUpp Road
               <br />
               Orlando, FL, 32808
               <br /> United States
-            </a>
-            <a
-              href="https://maps.app.goo.gl/tRSH2fdRJ5uYAhis9"
-              target="_blank"
-              rel="noopener noreferrer"
+            </h4>
+            <button onClick={scrollToMap}
               className="text-lg mt-5 text-[#41CB5B] font-medium uppercase"
             >
               Find us on map
-            </a>
+            </button>
           </div>
 
           <div className="flex flex-col h-[320px] bg-white shadow-2xl w-[350px] rounded-2xl justify-center items-center px-2 py-8">
@@ -157,7 +155,9 @@ const ContactUsPage = () => {
           </div>
         </div>
       </div>
-
+      <div className="responsive-map" id="map-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3505.023145961194!2d-81.381125!3d28.539023999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMyJzIwLjUiTiA4McKwMjInNTIuMSJX!5e0!3m2!1sen!2s!4v1729113736810!5m2!1sen!2s" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <Reviews />
     </>
   );
