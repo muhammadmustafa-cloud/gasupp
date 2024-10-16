@@ -236,7 +236,7 @@ function ContactForm() {
             <p className="text-center underline italic"></p>
             <p className="">
               <span className="text-center underline italic">
-                Privacy Notice:{" "}
+                Privacy Notice:{" "}<br/>
               </span>
               Your privacy is important to us. We will only use the information
               provided to respond to your inquiry and will not share it with
