@@ -169,3 +169,29 @@ body{
       margin-right: 25px !important;
     }
   }
+
+  
+.read-more-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.read-more-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  margin-top: 8px;
+  background-color: currentColor;
+  /* This will match the text color */
+  transition: width 0.3s ease-in-out;
+}
+
+.read-more-button:hover::after {
+  width: 65%;
+}

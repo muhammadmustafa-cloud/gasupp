@@ -160,12 +160,14 @@ return (
               </h4>
               <p className="text-base md:text-lg mt-2">{service.description}</p>
             </div>
-            <button
-              onClick={service.handleClick}
-              className="px-6 md:px-10 absolute bottom-6 font-medium mt-4 text-lg md:text-xl"
-            >
-              Read More
-            </button>
+            <div className="absolute bottom-6">
+              <button
+                onClick={service.handleClick}
+                className="px-6 read-more-button md:px-10 font-medium mt-4 text-lg md:text-xl "
+              >
+                Read More
+              </button>
+            </div>
           </div>
         ))}
       </div>

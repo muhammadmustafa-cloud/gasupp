@@ -74,7 +74,10 @@ function ContactForm() {
 
   return (
     <div>
-      <form action="mailto:info@gasupp.com" method="post" encType="text/plain"
+      <form
+        action="mailto:info@gasupp.com"
+        method="post"
+        encType="text/plain"
         // onSubmit={handleSubmit}
         className="p-4 md:p-8 text-white w-full mx-auto rounded-lg"
       >
@@ -95,8 +98,9 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email Address"
-            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${errors.email ? "border-red-500" : ""
-              }`}
+            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${
+              errors.email ? "border-red-500" : ""
+            }`}
             required
           />
           {errors.email && <p className="text-red-500">{errors.email}</p>}
@@ -105,22 +109,21 @@ function ContactForm() {
             name="phoneNumber"
             value={number}
             onChange={(e) => {
-              let value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+              let value = e.target.value.replace(/\D/g, ""); // Remove non-digit characters
               if (value.length <= 10) {
                 if (value.length > 6) {
-                  value = value.replace(/^(\d{3})(\d{3})(\d+)/, '$1-$2-$3'); // Format as 123-456-7890
+                  value = value.replace(/^(\d{3})(\d{3})(\d+)/, "$1-$2-$3"); // Format as 123-456-7890
                 } else if (value.length > 3) {
-                  value = value.replace(/^(\d{3})(\d+)/, '$1-$2'); // Format as 123-456
+                  value = value.replace(/^(\d{3})(\d+)/, "$1-$2"); // Format as 123-456
                 }
                 setNumber(value);
               }
             }}
-            placeholder="Enter 10-digit Number"
+            placeholder="Your Phone Number"
             className="bg-transparent border-2 rounded-md focus:outline-none p-2"
             maxLength={12} // Adjusted to account for the dashes
             required
           />
-
 
           <select
             name="subject"
@@ -224,16 +227,21 @@ function ContactForm() {
           </div>
         </div>
         <ReCAPTCHA
-    sitekey="6LdkmGEqAAAAAKWtCn-UuRQZrk5GSnrUa27aZ2BJ"
-    onChange={onChange}
-  />
+          sitekey="6LdkmGEqAAAAAKWtCn-UuRQZrk5GSnrUa27aZ2BJ"
+          onChange={onChange}
+        />
         {/* Privacy Policy */}
         <div>
           <NavLink onClick={() => window.scrollTo(0, 0)} to="/privacy-policy">
-            <p className="text-center underline italic">
-
+            <p className="text-center underline italic"></p>
+            <p className="">
+              <span className="text-center underline italic">
+                Privacy Notice:{" "}
+              </span>
+              Your privacy is important to us. We will only use the information
+              provided to respond to your inquiry and will not share it with
+              third parties.
             </p>
-            <p className=""><span className="text-center underline italic">Privacy Notice: </span>Your privacy is important to us. We will only use the information provided to respond to your inquiry and will not share it with third parties.</p>
           </NavLink>
         </div>
 

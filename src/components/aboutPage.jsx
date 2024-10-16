@@ -79,7 +79,7 @@ const AboutPage = () => {
       <div className="w-full bg-[#ECF0F9] justify-center items-center flex">
         <div className="my-10 bg-white flex-col md:flex-row-reverse flex w-[90%] md:w-[85%]">
           <div className="w-full flex justify-center items-center p-3">
-            <img className="rounded-lg" src={skillBg} alt="Skill Background" />
+            <img className="rounded-lg h-[400px] md:h-[600px] object-cover " src={skillBg} alt="Skill Background" />
           </div>
           <div className="py-8 px-6 md:px-24">
             <div className="flex relative">

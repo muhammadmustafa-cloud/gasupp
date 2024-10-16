@@ -134,7 +134,7 @@ const Testimonials = ({page}) => {
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-card mx-auto">
               <img src={testimonial.image} alt={testimonial.name} />
-              <p className="testimonial-text">{testimonial.text}</p>
+              <p className="text-justify testimonial-text">{testimonial.text}</p>
               <h4 className="testimonial-name">{testimonial.name}</h4>
               <h5 className="testimonial-role">{testimonial.role}</h5>
             </div>
