@@ -226,10 +226,10 @@ function ContactForm() {
             />
           </div>
         </div>
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey="6LdkmGEqAAAAAKWtCn-UuRQZrk5GSnrUa27aZ2BJ"
           onChange={onChange}
-        />
+        /> */}
         {/* Privacy Policy */}
         <div>
           <NavLink onClick={() => window.scrollTo(0, 0)} to="/privacy-policy">
