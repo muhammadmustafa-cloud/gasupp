@@ -69,7 +69,7 @@ const ContactUsPage = () => {
             <p className="text-lg text-[#898a9c] mt-3 w-[80%] text-center">
               {/* Clickable phone number */}
               <a href="tel:4072595949" className="text-[#898a9c]">
-                407-259-5949
+                305-699-5252‬
               </a>
             </p>
             {/* Call Now button */}

@@ -50,12 +50,12 @@ const Navbar = () => {
           >
             <li>Home</li>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/about-us"
             className={({ isActive }) => (isActive ? "text-[#41CB5B]" : "")}
           >
             <li>About Us</li>
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/service"
             className={({ isActive }) => (isActive ? "text-[#41CB5B]" : "")}
@@ -105,7 +105,7 @@ const Navbar = () => {
           >
             <li className="border-b py-4 flex justify-between">Home</li>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/about-us"
             className={({ isActive }) =>
               isActive ? "text-[#41CB5B]" : "text-black"
@@ -113,7 +113,7 @@ const Navbar = () => {
             onClick={closeNavbar}
           >
             <li className="border-b py-4 flex justify-between">About</li>
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/service"
             className={({ isActive }) =>

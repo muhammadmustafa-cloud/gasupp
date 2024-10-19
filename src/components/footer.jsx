@@ -46,9 +46,9 @@ const Footer = () => {
                 <NavLink onClick={() => window.scrollTo(0, 0)} to="/">
                   <li>Home</li>
                 </NavLink>
-                <NavLink onClick={() => window.scrollTo(0, 0)} to="/about-us">
+                {/* <NavLink onClick={() => window.scrollTo(0, 0)} to="/about-us">
                   <li>About Us</li>
-                </NavLink>
+                </NavLink> */}
                 <NavLink onClick={() => window.scrollTo(0, 0)} to="/service">
                   <li>Services</li>
                 </NavLink>
@@ -77,7 +77,7 @@ const Footer = () => {
                     <FaPhoneAlt fontSize="1.2em" className="text-white" />
                   </div>
                   <p>
-                    <a href="tel:4072595949">407-259-5949</a>
+                    <a href="tel:4072595949">305-699-5252‬</a>
                   </p>
                 </div>
                 <div className="flex items-center gap-3">

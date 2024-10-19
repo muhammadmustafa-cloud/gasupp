@@ -102,7 +102,7 @@ const TermServices = () => {
         </div>
         <div className="flex items-center gap-3">
           <h2 className="text-xl font-bold mb-5">Phone:</h2>
-          <p className="text-lg leading-8 mb-5">407-259-5949</p>
+          <p className="text-lg leading-8 mb-5">305-699-5252‬</p>
         </div>
        </div>
       </div>
