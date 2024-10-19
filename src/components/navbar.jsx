@@ -66,7 +66,7 @@ const Navbar = () => {
             to="/contact-us"
             className={({ isActive }) => (isActive ? "text-[#41CB5B]" : "")}
           >
-            <li>Contact Us</li>
+            <li>Contact</li>
           </NavLink>
         </ul>
       </div>

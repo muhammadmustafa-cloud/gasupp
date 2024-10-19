@@ -53,7 +53,7 @@ const Footer = () => {
                   <li>Services</li>
                 </NavLink>
                 <NavLink onClick={() => window.scrollTo(0, 0)} to="/contact-us">
-                  <li>Contact Us</li>
+                  <li>Contact</li>
                 </NavLink>
                 {/* <NavLink onClick={() => window.scrollTo(0, 0)} to='/why-choose-us'>
                             <li>Why Choose Us</li>
