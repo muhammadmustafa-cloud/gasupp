@@ -30,16 +30,17 @@ function ContactForm() {
     if (!number) validationErrors.number = "Phone number is required.";
     if (!subject) validationErrors.subject = "Subject is required.";
     if (!message) validationErrors.message = "Message is required.";
-
+  
     // If there are errors, set the error state and prevent form submission
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-    const serviceId = "service_xx5njob";
-    const templateId = "template_buqzqxb";
-    const publicKey = "jy3MOzC-PMHViMmuX";
-
+  
+    const serviceId = "service_xohw6ue";
+    const templateId = "gasupp_t36qu28";
+    const publicKey = "V7OUXBKphSqFSfSAN";
+  
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -47,30 +48,45 @@ function ContactForm() {
       from_subject: subject,
       from_message: message,
       from_contactMethod: contactMethod,
-      from_attachments: attachments,
+      // Ensure attachments are passed as a single string or an array of base64 strings
+      from_attachments: attachments ? attachments : "", // Ensure attachments is a string or handle multiple
     };
-
+  
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log("Email sent successfully", response);
+        // Clear form fields
         setName("");
         setEmail("");
         setNumber("");
         setSubject("");
         setMessage("");
-        setContactMethod("");
-        setAttachments("");
+        setContactMethod("Email"); // Resetting to default
+        setAttachments(null); // Reset attachments
         setModalOpen(true); // Open modal when email is sent successfully
       })
       .catch((error) => {
         console.error("Error sending email", error);
       });
   };
+  
 
   const closeModal = () => {
     setModalOpen(false);
   };
+
+  const handleFileChange = (e) => {
+  const file = e.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setAttachments(reader.result); // Set the base64 string
+    };
+    reader.readAsDataURL(file); // Convert file to base64
+  }
+};
+
 
   return (
     <div>
@@ -98,9 +114,8 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email Address"
-            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${
-              errors.email ? "border-red-500" : ""
-            }`}
+            className={`bg-transparent border-2 rounded-md focus:outline-none p-2 ${errors.email ? "border-red-500" : ""
+              }`}
             required
           />
           {errors.email && <p className="text-red-500">{errors.email}</p>}
@@ -221,7 +236,7 @@ function ContactForm() {
             <input
               type="file"
               name="attachments"
-              onChange={(e) => setAttachments(e.target.files[0])}
+              onChange={handleFileChange}
               className="w-full text-white"
             />
           </div>
@@ -236,7 +251,7 @@ function ContactForm() {
             <p className="text-center underline italic"></p>
             <p className="">
               <span className="text-center underline italic">
-                Privacy Notice:{" "}<br/>
+                Privacy Notice:{" "}<br />
               </span>
               Your privacy is important to us. We will only use the information
               provided to respond to your inquiry and will not share it with
