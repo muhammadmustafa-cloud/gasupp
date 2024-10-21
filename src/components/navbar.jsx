@@ -57,13 +57,13 @@ const Navbar = () => {
             <li>About Us</li>
           </NavLink> */}
           <NavLink
-            to="/service"
+            to="/services"
             className={({ isActive }) => (isActive ? "text-[#41CB5B]" : "")}
           >
             <li>Services</li>
           </NavLink>
           <NavLink
-            to="/contact-us"
+            to="/contact"
             className={({ isActive }) => (isActive ? "text-[#41CB5B]" : "")}
           >
             <li>Contact</li>
@@ -115,7 +115,7 @@ const Navbar = () => {
             <li className="border-b py-4 flex justify-between">About</li>
           </NavLink> */}
           <NavLink
-            to="/service"
+            to="/services"
             className={({ isActive }) =>
               isActive ? "text-[#41CB5B]" : "text-black"
             }
@@ -124,7 +124,7 @@ const Navbar = () => {
             <li className="border-b py-4 flex justify-between">Services</li>
           </NavLink>
           <NavLink
-            to="/contact-us"
+            to="/contact"
             className={({ isActive }) =>
               isActive ? "text-[#41CB5B]" : "text-black"
             }
