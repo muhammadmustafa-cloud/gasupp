@@ -56,8 +56,8 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about-us" element={<AboutPage />} />
-              <Route path="/service" element={<ServicePage />} />
-              <Route path="/contact-us" element={<ContactUsPage />} />
+              <Route path="/services" element={<ServicePage />} />
+              <Route path="/contact" element={<ContactUsPage />} />
               <Route path="/why-choose-us" element={<WhyChooseUs />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/term-service" element={<TermServices />} />
