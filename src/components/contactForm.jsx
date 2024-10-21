@@ -36,9 +36,9 @@ function ContactForm() {
       setErrors(validationErrors);
       return;
     }
-    const serviceId = "service_xohw6ue";
-    const templateId = "gasupp_t36qu28";
-    const publicKey = "V7OUXBKphSqFSfSAN";
+    const serviceId = "service_xx5njob";
+    const templateId = "template_buqzqxb";
+    const publicKey = "jy3MOzC-PMHViMmuX";
 
     const templateParams = {
       from_name: name,
@@ -75,10 +75,10 @@ function ContactForm() {
   return (
     <div>
       <form
-        action="mailto:info@gasupp.com"
-        method="post"
-        encType="text/plain"
-        // onSubmit={handleSubmit}
+        // action="mailto:info@gasupp.com"
+        // method="post"
+        // encType="text/plain"
+        onSubmit={handleSubmit}
         className="p-4 md:p-8 text-white w-full mx-auto rounded-lg"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4">
