@@ -26,7 +26,7 @@ function SubscribeModal({ isOpen, onClose, onSubmit }) {
       setErrors(validationErrors);
       return;
     }
-    const serviceId = "service_xohw6ue";
+    const serviceId = "gasupp_xohw6ue";
     const templateId = "gasupp_t36qu28";
     const publicKey = "V7OUXBKphSqFSfSAN";
 

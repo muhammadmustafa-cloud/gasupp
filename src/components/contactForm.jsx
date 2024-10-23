@@ -30,17 +30,17 @@ function ContactForm() {
     if (!number) validationErrors.number = "Phone number is required.";
     if (!subject) validationErrors.subject = "Subject is required.";
     if (!message) validationErrors.message = "Message is required.";
-  
+
     // If there are errors, set the error state and prevent form submission
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-  
-    const serviceId = "service_xohw6ue";
-    const templateId = "gasupp_t36qu28";
+
+    const serviceId = "gasupp_xohw6ue";
+    const templateId = "gasupp_1e0msux";
     const publicKey = "V7OUXBKphSqFSfSAN";
-  
+
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -51,7 +51,7 @@ function ContactForm() {
       // Ensure attachments are passed as a single string or an array of base64 strings
       from_attachments: attachments ? attachments : "", // Ensure attachments is a string or handle multiple
     };
-  
+
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
@@ -70,22 +70,22 @@ function ContactForm() {
         console.error("Error sending email", error);
       });
   };
-  
+
 
   const closeModal = () => {
     setModalOpen(false);
   };
 
   const handleFileChange = (e) => {
-  const file = e.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setAttachments(reader.result); // Set the base64 string
-    };
-    reader.readAsDataURL(file); // Convert file to base64
-  }
-};
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setAttachments(reader.result); // Set the base64 string
+      };
+      reader.readAsDataURL(file); // Convert file to base64
+    }
+  };
 
 
   return (
@@ -241,10 +241,10 @@ function ContactForm() {
             />
           </div>
         </div>
-        {/* <ReCAPTCHA
-          sitekey="6LdkmGEqAAAAAKWtCn-UuRQZrk5GSnrUa27aZ2BJ"
+        <ReCAPTCHA
+          sitekey="6Ler0WkqAAAAALrIg1OMbDZdG3_tvzHwEoN70qHT"
           onChange={onChange}
-        /> */}
+        />
         {/* Privacy Policy */}
         <div>
           <NavLink onClick={() => window.scrollTo(0, 0)} to="/privacy-policy">
